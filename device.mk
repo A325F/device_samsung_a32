@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.a32
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
