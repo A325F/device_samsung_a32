@@ -1752,7 +1752,7 @@ vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
 vendor/lib/libwpa_client.so
 vendor/lib/meta_wifi_data.so
-vendor/lib64/libwifi-hal.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
