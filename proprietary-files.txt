@@ -1398,15 +1398,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.1.so
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.2.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/power.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libpower_timer.so
@@ -1917,16 +1908,13 @@ vendor/lib/libhqm_hwparam.so
 vendor/lib/libicd_decoder.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/libminiui.so
-vendor/lib/libmmprofile.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmtkspparser.so
 vendor/lib/libnwk_opt_halwrap_vendor.so
 vendor/lib/libpadm.so
-vendor/lib/libperfctl_vendor.so
 vendor/lib/libpkm.so
-vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/librt_extamp_intf.so
 vendor/lib/libruy.so
 vendor/lib/libsecfr_engine.so
@@ -1987,7 +1975,6 @@ vendor/lib64/libicd_decoder.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libminiui.so
-vendor/lib64/libmmprofile.so
 vendor/lib64/libmnl.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtkares.so
@@ -1995,9 +1982,7 @@ vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libpadm.so
-vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpkm.so
-vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/librt_extamp_intf.so
 vendor/lib64/libruy.so
 vendor/lib64/libsec-ril.so
