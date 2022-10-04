@@ -1910,7 +1910,6 @@ vendor/lib/libipsec_ims_shr.so
 vendor/lib/libminiui.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtkares.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmtkspparser.so
 vendor/lib/libnwk_opt_halwrap_vendor.so
 vendor/lib/libpadm.so
@@ -1978,7 +1977,6 @@ vendor/lib64/libminiui.so
 vendor/lib64/libmnl.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtkares.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libpadm.so
