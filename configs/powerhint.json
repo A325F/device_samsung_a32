@@ -344,15 +344,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "44",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "FBTBoostTA",
       "Path": "/sys/kernel/fpsgo/fbt/boost_ta",
       "Values": [
@@ -528,12 +519,6 @@
         "Node": "CPUSchedBoost",
         "Duration": 3000,
         "Value": "6"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 3000,
-      "Value": "44"
     },
     {
       "PowerHint": "LAUNCH",
