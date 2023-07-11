@@ -2,6 +2,9 @@
 # AEE
 ro.vendor.have_aee_feature=1
 
+# APEX
+ro.apex.updatable=false
+
 # Audio
 persist.sys.fuse.passthrough.enable=true
 ro.audio.silent=0
