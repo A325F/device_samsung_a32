@@ -379,4 +379,7 @@
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>     
 </resources>
