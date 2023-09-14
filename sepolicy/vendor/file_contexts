@@ -32,6 +32,9 @@
 /vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay-service    u:object_r:hal_hdcp_default_exec:s0
 /vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay@1\.0-service    u:object_r:hal_hdcp_default_exec:s0
 
+# Health
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.a32                                 u:object_r:hal_health_default_exec:s0
+
 # hyper
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.hyper-service          u:object_r:hal_hyper_default_exec:s0
 

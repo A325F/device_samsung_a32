@@ -102,10 +102,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
-# Charger
-PRODUCT_PACKAGES += \
-    libsuspend
-
 # Codec2
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
@@ -186,13 +182,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
-
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0 \
-    android.hardware.health@2.1
+    android.hardware.health-service.a32 \
+    android.hardware.health-service.a32-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
