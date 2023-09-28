@@ -834,10 +834,6 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.rc
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4_1support.so
-vendor/lib64/libkeymaster_helper.so
-vendor/lib64/libskeymaster4device.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
@@ -1040,8 +1036,6 @@ vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
@@ -2008,7 +2002,6 @@ vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libsnap_vndk.so
 vendor/lib64/libsnaplite_native.so
 vendor/lib64/libsnaplite_wrapper.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/libsomxcmn.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
