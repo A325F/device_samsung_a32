@@ -1,0 +1,376 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+# I am S vendor meta_init.rc
+import /vendor/etc/init/hw/init.aee.rc
+import /vendor/etc/init/trustonic.rc
+import ${ro.vendor.rc}meta_init.connectivity.rc
+import /vendor/etc/init/hw/meta_init.project.rc
+import /vendor/etc/init/microtrust.rc
+import /vendor/etc/init/teegris.rc
+import /vendor/etc/init/android.hardware.boot@1.2-service-lazy.rc
+import /vendor/etc/init/android.hardware.boot@1.2-service.rc
+
+#import ${ro.vendor.rc}multi_init.rc
+#phase out multi_init.rc, move related vendor rc to here.
+#start
+import /vendor/etc/init/aee_aedv.rc
+import /vendor/etc/init/aee_aedv64.rc
+import /vendor/etc/init/storageproxyd.rc
+import /vendor/etc/init/android.hardware.keymaster@3.0-service.rc
+import /vendor/etc/init/android.hardware.keymaster@3.0-service.trustonic.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.lite.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.trustkernel.rc
+import /vendor/etc/init/android.hardware.keymaster@4.0-service.mtee.rc
+import /vendor/etc/init/android.hardware.keymaster@4.1-service.rc
+import /vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc
+import /vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
+import /vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.lite.rc
+import /vendor/etc/init/android.hardware.keymaster@4.1-service.trustkernel.rc
+import /vendor/etc/init/android.hardware.security.keymint-service.rc
+#import /vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc
+import /vendor/etc/init/vendor.mediatek.hardware.keymanage@1.0-service.rc
+import /vendor/etc/init/android.hardware.audio.service.mediatek.rc
+import /vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+import /vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
+import /vendor/etc/init/tee.rc
+import /vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
+import /vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice-lazy.rc
+import /vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc
+import /vendor/etc/init/android.hardware.light@2.0-service-mediatek-lazy.rc
+import /vendor/etc/init/lights-mtk-default.rc
+import /vendor/etc/init/lights-mtk-lazy.rc
+import /vendor/etc/init/merged_hal_service.rc
+import /vendor/etc/init/spm_script.rc
+import /vendor/etc/init/nvram_daemon.rc
+import /vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+import /vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+import /vendor/etc/init/microtrust.init_thh.rc
+#end
+
+#Make sure meta_init.modem.rc is the last rc file.
+import ${ro.vendor.rc}meta_init.modem.rc
+
+on early-init
+    write /proc/bootprof "INIT:early-init"
+
+    # Set init and its forked children's oom_adj.
+    write /proc/1/oom_score_adj -1000
+
+
+#INTERNAL_START
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+#INTERNAL_END
+
+    # Set ko module init
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mt6358-accdet.ko
+
+on init
+    write /proc/bootprof "INIT:init"
+
+    write /proc/bootprof "INIT: on init mt6768 start"
+
+    # Backward compatibility.
+    symlink /system/bin /bin
+    symlink /system/etc /etc
+
+    # Backward compatibility.
+    symlink /sys/kernel/debug /d
+
+    # Link /vendor to /system/vendor for devices without a vendor partition.
+    symlink /system/vendor /vendor
+
+# Temp Backward compatibility
+    symlink /dev/block/platform/bootdevice/by-name/boot /dev/bootimg
+    symlink /dev/block/platform/bootdevice/by-name/recovery /dev/recovery
+    symlink /dev/block/platform/bootdevice/by-name/secro  /dev/sec_ro
+    symlink /dev/block/platform/bootdevice/by-name/kb /dev/kb
+    symlink /dev/block/platform/bootdevice/by-name/dkb /dev/dkb
+    symlink /dev/block/platform/bootdevice/by-name/seccfg /dev/seccfg
+    symlink /dev/block/platform/bootdevice/by-name/proinfo /dev/pro_info
+    symlink /dev/block/platform/bootdevice/by-name/nvram /dev/nvram
+    symlink /dev/block/platform/bootdevice/by-name/para /dev/misc
+    symlink /dev/block/platform/bootdevice/by-name/logo /dev/logo
+
+
+    # Support legacy paths
+    symlink /sdcard /mnt/sdcard
+
+
+
+#INTERNAL_START
+    symlink /sdcard /mnt/sdcard
+
+    mkdir /mnt/cd-rom 0000 system system
+#INTERNAL_END
+
+    start hidl_memory
+
+
+# Load properties from /system/ + /factory after fs mount.
+on load_system_props_action
+    load_system_props
+
+
+    # avoid no log in meta mode due to logd-reinit
+ #   stop keyinstall-1-0
+  #  start keyinstall-1-0
+
+
+on fs
+    ## USB configfs
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+    mkdir /config/usb_gadget/g1 0770 shell shell
+    write /config/usb_gadget/g1/idVendor 0x0E8D
+    write /config/usb_gadget/g1/bcdDevice 0xFFFF
+    write /config/usb_gadget/g1/bcdUSB 0x0200
+    mkdir /config/usb_gadget/g1/strings/0x409 0770
+    write /config/usb_gadget/g1/strings/0x409/manufacturer "Android"
+    write /config/usb_gadget/g1/strings/0x409/product "Android"
+    write /config/usb_gadget/g1/bDeviceClass 0
+    write /config/usb_gadget/g1/bDeviceSubClass 0
+    write /config/usb_gadget/g1/bDeviceProtocol 0
+    mkdir /config/usb_gadget/g1/functions/mass_storage.usb0
+    mkdir /config/usb_gadget/g1/functions/ffs.adb
+    mkdir /config/usb_gadget/g1/functions/acm.gs0
+    mkdir /config/usb_gadget/g1/functions/acm.gs1
+    mkdir /config/usb_gadget/g1/functions/acm.gs2
+    mkdir /config/usb_gadget/g1/functions/acm.gs3
+    mkdir /config/usb_gadget/g1/configs/b.1 0770 shell shell
+    mkdir /config/usb_gadget/g1/configs/b.1/strings/0x409 0770 shell shell
+    write /config/usb_gadget/g1/configs/b.1/MaxPower 500
+    symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
+
+    write /proc/bootprof "INIT:fs"
+#INTERNAL_START
+    write /proc/bootprof "INIT:Mount_START"
+    start vendor.boot-hal-1-2
+    mount_all /vendor/etc/fstab.mt6768 --early
+    write /proc/bootprof "INIT:Mount_END"
+#INTERNAL_END
+
+on post-fs
+    write /proc/bootprof "INIT:post-fs"
+ #   start keyinstall-1-0
+    start vendor.light-default
+    start merged_hal_service
+    start vendor.boot-hal-1-2
+
+    # Support legacy paths
+    symlink /sdcard /storage/sdcard0
+
+
+#INTERNAL_START
+    chown system system /mnt/vendor/protect_f
+    chmod 0770 /mnt/vendor/protect_f
+
+    chown system system /mnt/vendor/protect_s
+    chmod 0770 /mnt/vendor/protect_s
+
+    chown system system /mnt/vendor/nvcfg
+    chmod 0771 /mnt/vendor/nvcfg
+    restorecon_recursive /mnt/vendor/nvcfg
+
+    chown root system /mnt/vendor/nvdata
+    chmod 0771 /mnt/vendor/nvdata
+    mkdir /mnt/vendor/nvdata/media 0771 media audio
+    restorecon_recursive /mnt/vendor/nvdata
+
+#INTERNAL_END
+
+on late-fs
+    start keystore2
+
+    # HALs required before storage encryption can get unlocked (FBE/FDE)
+    class_start early_hal
+
+    exec_start wait_for_keymaster
+    mount_all /vendor/etc/fstab.mt6768 --late
+
+on post-fs-data
+    write /proc/bootprof "INIT:post-fs-data"
+
+#INTERNAL_START
+    # WiFi
+    mkdir /data/misc/wifi 0770 system wifi
+    mkdir /data/misc/wifi/sockets 0770 system wifi
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    chown dhcp dhcp /data/misc/dhcp
+    #give system access to rfkill device node
+    chmod 0660 /dev/rfkill
+
+    # RTC
+    mkdir /data/misc/rtc 0770 system system
+
+    # Android SEC related device nodes
+    chmod 0660 /dev/sec
+    chown root system /dev/sec
+
+    #change partition permission
+    exec /vendor/etc/partition_permission.sh
+
+    chmod 0666 /dev/exm0
+#INTERNAL_END
+
+
+on boot
+    write /proc/bootprof "INIT:boot"
+
+    # For backlight
+    chmod 0664 /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/lcd-backlight/brightness
+    write /sys/class/leds/vibrator/trigger "transient"
+
+
+#INTERNAL_START
+    class_start default
+#INTERNAL_END
+
+#USB configfs
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+    chown system radio /dev/ttyGS3
+    chmod 0660 /dev/ttyGS3
+    setprop sys.usb.configfs 1
+	setprop sys.usb.ffs.aio_compat 0
+
+# One shot invocation to encrypt unencrypted volumes
+# mtk modification:
+#   To speed up the booting in meta/factory mode, we don't encrypt the device.
+#   And then handle it as 'unencrypted' state.
+on encrypt && property:ro.vendor.mtk_f2fs_enable=0
+    mount ext4 /dev/block/platform/bootdevice/by-name/userdata /data noatime nosuid nodev noauto_da_alloc discard wait
+
+on encrypt && property:ro.vendor.mtk_f2fs_enable=1
+    mount f2fs /dev/block/platform/bootdevice/by-name/userdata /data noatime nosuid nodev discard wait
+
+on encrypt
+    setprop vendor.crypto.fake_encrypt 1
+    setprop vold.post_fs_data_done 0
+    trigger post-fs-data
+on property:vendor.crypto.fake_encrypt=1 && property:vold.post_fs_data_done=1
+    trigger load_persist_props_action
+    # setprop ro.crypto.state unencrypted
+    setprop vendor.soter.teei.crypto.state unencrypted
+    exec_start update_verifier
+    class_start main
+    class_start late_start
+    start mount_all_storages
+
+#INTERNAL_START
+
+service loghidlvendorservice /vendor/bin/loghidlvendorservice
+    class main
+    user shell
+    group system shell radio
+
+service meta_tst /vendor/bin/meta_tst
+    user system
+    group radio system wifi audio bluetooth media gps
+    socket meta-atci stream 660 radio system
+
+service factory_no_image /vendor/bin/factory
+    user root
+    group radio system wifi media gps audio bluetooth wakelock nfc
+    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
+    socket factory-atci stream 660 radio system	
+
+service atcid-daemon-u /vendor/bin/atcid
+    interface vendor.mediatek.hardware.atci@1.0::IAtcid default
+    class hal
+    class core
+    socket adb_atci_socket stream 660 radio system
+    user root
+    group radio system
+    oneshot
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class main
+    user root
+    group system
+    oneshot
+
+service wlan_assistant /vendor/bin/wlan_assistant
+    class main
+    user wifi
+    group system gps inet
+
+service fuelgauged /vendor/bin/fuelgauged
+    class main
+    user system
+    group system
+
+on property:vendor.mtk.factory.start=1
+    stop factory_no_image
+    start factory_no_image
+#META+ADB
+on property:ro.boot.usbconfig=0 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:start adbd"
+    start adbd
+
+    # Generate linker config based on apex mounted in bootstrap namespace
+    update_linker_config
+
+on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=0 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig=0"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "adb_acm"
+    write /config/usb_gadget/g1/idProduct 0x200E
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+
+#META, move this to kernel driver
+on property:ro.boot.usbconfig=1 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 1"
+    #write /config/usb_gadget/g1/UDC "none"
+    #write /config/usb_gadget/g1/strings/0x409/serialnumber ""
+    #write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "acm"
+    #write /config/usb_gadget/g1/idProduct 0x2007
+    #write /config/usb_gadget/g1/bDeviceClass 02
+    #symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    #write /config/usb_gadget/g1/UDC "musb-hdrc"
+
+#META+ELT, move this to kernel driver
+on property:ro.boot.usbconfig=2 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 2"
+    setprop vendor.usb.acm_idx 1,4
+    #write /config/usb_gadget/g1/UDC "none"
+    #write /config/usb_gadget/g1/strings/0x409/serialnumber $ro.serialno
+    #write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "meta_elt"
+    #write /config/usb_gadget/g1/idProduct 0x202d
+    #symlink /config/usb_gadget/g1/functions/mass_storage.usb0 /config/usb_gadget/g1/configs/b.1/f1
+    #symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f2
+    #symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f3
+    #write /config/usb_gadget/g1/UDC "musb-hdrc"
+
+#META+ELT+ADB
+on property:ro.boot.usbconfig=3 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:start adbd"
+    start adbd
+
+    # Generate linker config based on apex mounted in bootstrap namespace
+    update_linker_config
+
+on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=3 && property:sys.usb.configfs=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 3"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "meta_elt_adb"
+    write /config/usb_gadget/g1/idProduct 0x2040
+    write /sys/devices/platform/mt_usb/saving 1
+    symlink /config/usb_gadget/g1/functions/mass_storage.usb0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f3
+    symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f4
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+    setprop vendor.usb.acm_idx 1,4
+
+#INTERNAL_END

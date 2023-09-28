@@ -1,0 +1,37 @@
+import /vendor/etc/init/hw/meta_init.connectivity.common.rc
+
+#INTERNAL_START
+
+on boot
+
+#
+# Connectivity related services (Begin)
+#
+
+# WMT
+service wmt_loader /vendor/bin/wmt_loader
+    user system
+    group system
+    oneshot
+
+service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/
+    user system
+    group system
+
+#
+# Connectivity related services (End)
+#
+
+#
+# Connectivity related kernel objects (Begin)
+#
+
+# load wmt_drv
+on boot
+    insmod /vendor/lib/modules/wmt_drv.ko
+
+#
+# Connectivity related kernel objects (End)
+#
+
+#INTERNAL_END

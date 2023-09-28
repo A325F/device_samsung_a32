@@ -1,0 +1,5 @@
+# default is the init flow for the project without AGO settings
+
+on post-fs-data
+    write /proc/sys/vm/page-cluster 0
+    write /sys/kernel/mm/swap/vma_ra_enabled false
