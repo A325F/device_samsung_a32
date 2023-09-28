@@ -139,6 +139,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6769t:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6769t \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6769t:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6769t
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
