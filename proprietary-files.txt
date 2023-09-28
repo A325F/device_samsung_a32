@@ -1733,7 +1733,6 @@ vendor/lib/libnxpsmartpaparser.so
 vendor/lib/libpadm.so
 vendor/lib/libperfctl_vendor.so
 vendor/lib/libpkm.so
-vendor/lib/libpowerhal.so
 vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/librcs_interface.so
@@ -1988,7 +1987,6 @@ vendor/lib64/libnxpsmartpaparser.so
 vendor/lib64/libpadm.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpkm.so
-vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libratconfig.so

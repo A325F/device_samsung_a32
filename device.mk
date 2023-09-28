@@ -84,6 +84,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
