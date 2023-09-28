@@ -1506,10 +1506,6 @@ vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/factory.ini
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6768
-vendor/etc/fstab.mt6769t
-vendor/etc/fstab.ramplus
 vendor/etc/fstb.cfg
 vendor/etc/hqm_device.xml
 vendor/etc/linker.config.pb

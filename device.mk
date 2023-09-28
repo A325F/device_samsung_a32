@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
     init.insmod.sh
 
 PRODUCT_PACKAGES += \
+    fstab.enableswap \
+    fstab.mt6768 \
+    fstab.mt6769t \
     fstab.ramplus \
     init.aee.rc \
     init.ago.rc \
@@ -120,7 +123,9 @@ PRODUCT_PACKAGES += \
     init.recovery.samsung.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.ramplus:$(TARGET_COPY_OUT_RAMDISK)/fstab.ramplus
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6769t:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6769t \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6769t:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6769t
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
