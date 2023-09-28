@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor \
     android.hardware.camera.provider@2.7.vendor
 
+# Disable SF configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
