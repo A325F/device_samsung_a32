@@ -17,41 +17,7 @@ sh_binary {
     vendor: true,
 }
 
-sh_binary {
-    name: "install-recovery.sh",
-    src: "bin/install-recovery.sh",
-    vendor: true,
-}
-
 // Init configuration files
-prebuilt_etc {
-    name: "factory_init.connectivity.common.rc",
-    src: "etc/factory_init.connectivity.common.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.connectivity.rc",
-    src: "etc/factory_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.project.rc",
-    src: "etc/factory_init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "factory_init.rc",
-    src: "etc/factory_init.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 prebuilt_etc {
     name: "init.aee.rc",
     src: "etc/init.aee.rc",
@@ -69,13 +35,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.cgroup.rc",
     src: "etc/init.cgroup.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.connectivity.common.rc",
-    src: "etc/init.connectivity.common.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -111,69 +70,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mt6769t.rc",
     src: "etc/init.mt6769t.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.project.rc",
-    src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "etc/init_connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.connectivity.common.rc",
-    src: "etc/meta_init.connectivity.common.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.connectivity.rc",
-    src: "etc/meta_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.modem.rc",
-    src: "etc/meta_init.modem.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.project.rc",
-    src: "etc/meta_init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.rc",
-    src: "etc/meta_init.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.vendor.rc",
-    src: "etc/meta_init.vendor.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "multi_init.rc",
-    src: "etc/multi_init.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

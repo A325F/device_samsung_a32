@@ -103,36 +103,21 @@ PRODUCT_CHARACTERISTICS := default
 # Rootdir
 PRODUCT_PACKAGES += \
     hdm_status.sh \
-    init.insmod.sh \
-    install-recovery.sh \
+    init.insmod.sh
 
 PRODUCT_PACKAGES += \
     fstab.ramplus \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
     init.aee.rc \
     init.ago.rc \
     init.cgroup.rc \
-    init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6768.rc \
     init.mt6768.usb.rc \
     init.mt6769t.rc \
-    init.project.rc \
-    init_connectivity.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    meta_init.vendor.rc \
-    multi_init.rc \
     init.recovery.mt6768.rc \
     init.recovery.mt6769t.rc \
-    init.recovery.samsung.rc \
+    init.recovery.samsung.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ramplus:$(TARGET_COPY_OUT_RAMDISK)/fstab.ramplus
