@@ -123,7 +123,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6769t \
     fstab.ramplus \
-    init.aee.rc \
     init.ago.rc \
     init.cgroup.rc \
     init.connectivity.rc \

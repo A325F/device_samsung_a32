@@ -1,5 +1,13 @@
 # Unpinned blobs from a32xx-user 13 TP1A.220624.014 A325FXXU6DWH3 release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib/libladder.so
+vendor/lib/libudf.so
+vendor/lib64/libaedv.so
+vendor/lib64/libladder.so
+vendor/lib64/libudf.so
+
 # Audio
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
@@ -16,14 +24,12 @@ vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/audioclient-types-aidl-cpp.so
 vendor/lib/framework-permission-aidl-cpp.so
 vendor/lib/lib_SamsungRec_07010.so
-vendor/lib/libaedv.so
 vendor/lib/libalsautils.so
 vendor/lib/libaudio-ril.so
 vendor/lib/libaudioclient_aidl_conversion.so
 vendor/lib/libaudiofoundation.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libfloatingfeature.so
-vendor/lib/libladder.so
 vendor/lib/librecordalive.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
@@ -47,14 +53,12 @@ vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/lib64/framework-permission-aidl-cpp.so
 vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib64/libaedv.so
 vendor/lib64/libalsautils.so
 vendor/lib64/libaudio-ril.so
 vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libfloatingfeature.so
-vendor/lib64/libladder.so
 vendor/lib64/librecordalive.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
@@ -1059,7 +1063,6 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/tetheroffloadservice
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
@@ -1086,10 +1089,6 @@ vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/AgentTest
 vendor/bin/[
 vendor/bin/add.pb
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
-vendor/bin/aeev
 vendor/bin/applypatch
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
@@ -1207,8 +1206,6 @@ vendor/etc/hyper/config_chipset.json
 vendor/etc/hyper/config_hyper_permission.json
 vendor/etc/hyper/config_model.json
 vendor/etc/hyper/config_vendor.json
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/boringssl_self_test.rc
@@ -1256,7 +1253,6 @@ vendor/etc/init/snap_utility.rc
 vendor/etc/init/teegris_v4.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vaultkeeper_common.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
@@ -1471,8 +1467,6 @@ vendor/etc/AudioLog_dynamic.xml
 vendor/etc/SetMultiCal.bin
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/VideoLog_dynamic.xml
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/etc/armnn_app.config
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
@@ -1749,7 +1743,6 @@ vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_mdmi_v2.8.2.so
 vendor/lib/libtranslator_utils.so
-vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libuuid.so
 vendor/lib/libvc1dec_sa.ca7.so
@@ -2019,7 +2012,6 @@ vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/libtvm_runtime.so
 vendor/lib64/libtvm_wrapper.so
-vendor/lib64/libudf.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libuuid.so
 vendor/lib64/libvcodec_oal.so
@@ -2038,8 +2030,6 @@ vendor/lib64/meta_wifi_data.so
 vendor/lib64/nwk_opt_imp.so
 vendor/lib64/s5kgw3_mipi_raw_tuning.so
 vendor/lib64/sr846d_mipi_raw_tuning.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
