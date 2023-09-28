@@ -709,11 +709,9 @@ lib64/vendor.mediatek.hardware.pq@2.2.so
 lib64/vendor.mediatek.hardware.pq@2.3.so
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
 vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/lib/egl/egl.cfg
