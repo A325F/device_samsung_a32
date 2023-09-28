@@ -82,6 +82,10 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0.vendor
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
