@@ -144,5 +144,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a32/a32-vendor.mk)
