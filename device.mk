@@ -23,6 +23,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinycompress
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
