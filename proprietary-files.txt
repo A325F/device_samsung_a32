@@ -815,7 +815,6 @@ vendor/lib/hw/gatekeeper.mt6769t.so
 vendor/lib64/hw/gatekeeper.mt6769t.so
 
 # GNSS
-vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib64/hw/gps.default.so
 
 # GNSS configs
