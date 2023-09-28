@@ -109,24 +109,6 @@ vendor/lib64/libvibrator.so
 vendor/lib64/spatializer-aidl-cpp.so
 
 # Audio configs
-etc/audio_effects.conf
-etc/audio_effects_common.conf
-system_ext/etc/a2dp_audio_policy_configuration.xml
-system_ext/etc/a2dp_in_audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-system_ext/etc/audio_policy_configuration_stub.xml
-system_ext/etc/audio_policy_engine_configuration.xml
-system_ext/etc/audio_policy_engine_default_stream_volumes.xml
-system_ext/etc/audio_policy_engine_product_strategies.xml
-system_ext/etc/audio_policy_engine_stream_volumes.xml
-system_ext/etc/audio_policy_volumes.xml
-system_ext/etc/bluetooth_audio_policy_configuration.xml
-system_ext/etc/default_volume_tables.xml
-system_ext/etc/default_volume_tables.xml
-system_ext/etc/hearing_aid_audio_policy_configuration.xml
-system_ext/etc/r_submix_audio_policy_configuration.xml
-system_ext/etc/usb_audio_policy_configuration.xml
 vendor/etc/audio_param/ODM/3GVTDV_AudioParam.xml
 vendor/etc/audio_param/ODM/3GVTDV_ParamUnitDesc.xml
 vendor/etc/audio_param/ODM/3GVTVolUI_AudioParam.xml
@@ -425,19 +407,6 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
-vendor/etc/a2dpsink_audio_policy_configuration.xml
-vendor/etc/audio_effects.xml
-vendor/etc/audio_effects_sec.xml
-vendor/etc/audio_effects_spatializer.xml
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_configuration_sec.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/hearing_aid_audio_policy_configuration.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/tms_audio_policy_configuration.xml
-vendor/etc/usb_audio_policy_configuration.xml
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
@@ -1460,9 +1429,6 @@ vendor/etc/SetMultiCal.bin
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/armnn_app.config
-vendor/etc/audio_device.xml
-vendor/etc/audio_em.xml
-vendor/etc/audio_policy.conf
 vendor/etc/aurisys_config.xml
 vendor/etc/btcon.json
 vendor/etc/cgroups.json
