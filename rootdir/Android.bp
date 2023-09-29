@@ -85,6 +85,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
+
 // fstab
 prebuilt_etc {
     name: "fstab.ramplus",

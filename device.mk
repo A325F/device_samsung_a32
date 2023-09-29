@@ -277,7 +277,8 @@ PRODUCT_PACKAGES += \
     init.mt6769t.rc \
     init.recovery.mt6768.rc \
     init.recovery.mt6769t.rc \
-    init.recovery.samsung.rc
+    init.recovery.samsung.rc \
+    init.target.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \
