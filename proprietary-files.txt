@@ -1452,9 +1452,6 @@ vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/etc/power_app_cfg.xml
-vendor/etc/powercontable.xml
-vendor/etc/powerscntbl.xml
 vendor/etc/public.libraries.txt
 vendor/etc/recovery-resource.dat
 vendor/etc/sec_audio_volume_curve.xml
