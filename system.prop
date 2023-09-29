@@ -151,6 +151,9 @@ wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
