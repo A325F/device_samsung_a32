@@ -263,6 +263,8 @@ RODUCT_COPY_FILES += \
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+include $(LOCAL_PATH)/configs/log/vendor_logtag.mk
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0.vendor \
