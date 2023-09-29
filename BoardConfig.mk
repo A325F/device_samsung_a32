@@ -32,6 +32,10 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_samsung_a32
+TARGET_RECOVERY_DEVICE_MODULES := libinit_samsung_a32
+
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
