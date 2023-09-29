@@ -1006,12 +1006,6 @@ vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.1.so
 
-# Wi-Fi configs
-vendor/etc/wifi/indoorchannel.info
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-
 # Miscellaneous
 vendor/apex/com.samsung.android.authfw.ta.preload.apex
 vendor/apex/com.samsung.android.biometrics.face.signed.apex
