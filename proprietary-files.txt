@@ -993,14 +993,11 @@ vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.mt6768.so
 
 # Wi-Fi
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
