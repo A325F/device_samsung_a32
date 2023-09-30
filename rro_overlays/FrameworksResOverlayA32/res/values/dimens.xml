@@ -20,7 +20,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height">24.0dip</dimen>
+    <dimen name="status_bar_height_default">24.0dip</dimen>
     <dimen name="status_bar_height_portrait">24.0dip</dimen>
     <dimen name="status_bar_height_landscape">24.0dip</dimen>
 
