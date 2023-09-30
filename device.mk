@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libalsautils \
     libtinycompress
 
 PRODUCT_PACKAGES += \
