@@ -1816,7 +1816,6 @@ vendor/etc/init/dsmsca.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/face-default-sec.rc
 vendor/etc/init/fingerprint_common.rc
-vendor/etc/init/init.a32.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.connfem.rc
 vendor/etc/init/init.fingerprint.rc
