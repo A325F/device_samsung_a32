@@ -44,8 +44,6 @@ vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio_policy.stub.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/audio_common-aidl-cpp.so
-vendor/lib/audioclient-types-aidl-cpp.so
-vendor/lib/framework-permission-aidl-cpp.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_iir.so
@@ -71,12 +69,9 @@ vendor/lib/librecordalive.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libsecril-client.so
-vendor/lib/libshmemcompat.so
-vendor/lib/libshmemutil.so
 vendor/lib/libspeakercalibration.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
-vendor/lib/shared-file-region-aidl-cpp.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
@@ -93,8 +88,6 @@ vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib64/audio_common-aidl-cpp.so
-vendor/lib64/audioclient-types-aidl-cpp.so
-vendor/lib64/framework-permission-aidl-cpp.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/lib_iir.so
@@ -120,12 +113,9 @@ vendor/lib64/librecordalive.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsecril-client.so
-vendor/lib64/libshmemcompat.so
-vendor/lib64/libshmemutil.so
 vendor/lib64/libspeakercalibration.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
-vendor/lib64/shared-file-region-aidl-cpp.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
@@ -147,7 +137,6 @@ vendor/lib/lib_SoundBooster_ver1050.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib/libvibrator.so
 vendor/lib/spatializer-aidl-cpp.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
@@ -165,7 +154,6 @@ vendor/lib64/lib_SoundBooster_ver1050.so
 vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/libvibrator.so
 vendor/lib64/spatializer-aidl-cpp.so
 
 # Audio configs
@@ -544,9 +532,6 @@ vendor/lib/hw/camera.unihal.default.so
 vendor/lib/mt6768/libdpframework.so
 vendor/lib/mt6768/libmtk_drvb.so
 vendor/lib/mt6768/libpq_prot.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
 vendor/lib/gc02m1_mipi_raw_tuning.so
 vendor/lib/gc02m1b_mipi_raw_tuning.so
 vendor/lib/gc5035_mipi_raw_tuning.so
@@ -612,11 +597,6 @@ vendor/lib64/mt6768/libdpframework.so
 vendor/lib64/mt6768/libmtk_drvb.so
 vendor/lib64/mt6768/libpq_prot.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/gc02m1_mipi_raw_IdxMgr.so
 vendor/lib64/gc02m1_mipi_raw_tuning.so
 vendor/lib64/gc02m1b_mipi_raw_IdxMgr.so
@@ -904,7 +884,6 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
-vendor/lib64/libhwc2onfbadapter.so
 vendor/lib64/libmml.so
 vendor/lib64/libnir_neon_driver.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
@@ -939,7 +918,6 @@ vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
 
 # Fingerprint
-vendor/lib/hw/fingerprint.default.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
@@ -947,7 +925,6 @@ vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/libteecl.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
@@ -1200,10 +1177,6 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib/hw/lights.mt6768.so
 vendor/lib64/hw/lights.mt6768.so
 
-# Local time
-vendor/lib/hw/local_time.default.so
-vendor/lib64/hw/local_time.default.so
-
 # Locale
 vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
@@ -1211,27 +1184,15 @@ vendor/etc/locale/plmn_delta_zh-rHK.bin
 vendor/etc/locale/plmn_delta_zh-rTW.bin
 
 # Media
-lib/libdatasource.so
 lib/libdatasource_local_cache.so
 lib/libhdcp2.so
 lib/libhdcp_client_aidl.so
-lib/libmedia_codeclist.so
 lib/libomafldrm.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_framecapture_utils.so
 lib/libstagefright_hdcp.so
 lib/libstagefright_httplive_sec.so
-lib/libstagefright_surface_utils.so
 lib/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk.so
-lib64/libdatasource.so
 lib64/libdatasource_local_cache.so
-lib64/libmedia_codeclist.so
 lib64/libomafldrm.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_surface_utils.so
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/hw/android.hardware.media.omx@1.0-service
@@ -1251,14 +1212,9 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_hidl@1.2.so
-vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_simple_component.so
-vendor/lib/libcodec2_soft_common.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
@@ -1276,8 +1232,6 @@ vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libpredeflicker_native.so
-vendor/lib/libsfplugin_ccodec_utils.so
-vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_foundation_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
@@ -1294,16 +1248,12 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
-vendor/lib/libvpx.so
 vendor/lib/vintf-codecsolution-V2-ndk_platform.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/AVCSecureVencCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
-vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
@@ -1317,9 +1267,7 @@ vendor/lib64/libcodec2_sec_mp3dec.so
 vendor/lib64/libcodec2_sec_mp4vdec.so
 vendor/lib64/libcodec2_sec_soft_common.so
 vendor/lib64/libcodec2_sec_vc1dec.so
-vendor/lib64/libcodec2_simple_component.so
 vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_soft_eac3dec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib64/libcodec2_soft_mtk_mp3dec.so
@@ -1331,8 +1279,6 @@ vendor/lib64/libformatter.so
 vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libimgsensorca.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libsfplugin_ccodec_utils.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_foundation_vendor.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libthha.so
@@ -1376,7 +1322,6 @@ vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libnxpsmartpaparser.so
 
 # NFC configs
-etc/libnfc-nci.conf
 vendor/etc/libnfc-sec-vendor.conf
 
 # NVRAM
@@ -1686,7 +1631,6 @@ vendor/lib64/libtranslator_utils.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.3-service.coral
 vendor/etc/init/android.hardware.usb@1.3-service.coral.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml
 
 # Vibrator
 vendor/bin/hw/vendor.samsung.hardware.vibrator-service
@@ -1745,68 +1689,40 @@ vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
 vendor/bin/AgentTest
 vendor/bin/add.pb
-vendor/bin/applypatch
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/cass
-vendor/bin/chattr
 vendor/bin/chipinfo
 vendor/bin/dconfig
-vendor/bin/devmem
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dsmsca
 vendor/bin/dtc_vendor
-vendor/bin/dumpsys
 vendor/bin/emservice
 vendor/bin/factory
 vendor/bin/fsdbg_vendor
-vendor/bin/fsync
-vendor/bin/getconf
-vendor/bin/i2cdetect
-vendor/bin/i2cdump
-vendor/bin/i2cget
-vendor/bin/i2cset
-vendor/bin/iconv
-vendor/bin/install
 vendor/bin/iod
 vendor/bin/jpegtool
 vendor/bin/loghidlvendorservice
-vendor/bin/lsattr
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/meta_tst
 vendor/bin/mrdump_tool
 vendor/bin/mt6660_calibration
 vendor/bin/mtk_pkm_service
-vendor/bin/nc
-vendor/bin/netcat
-vendor/bin/nproc
-vendor/bin/nsenter
 vendor/bin/quad_reg.bin
-vendor/bin/readelf
 vendor/bin/recordevent
 vendor/bin/replayevent
 vendor/bin/rt5512_calibration
-vendor/bin/rtcwake
 vendor/bin/rttv
 vendor/bin/secril_config_svc
 vendor/bin/storkd
 vendor/bin/stp_dump3
-vendor/bin/test
 vendor/bin/test_model.json
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
-vendor/bin/unlink
-vendor/bin/unshare
-vendor/bin/uuidgen
-vendor/bin/watch
 vendor/bin/wvkprov
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/cass.rc
 vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
@@ -1886,7 +1802,6 @@ vendor/lib/libdecrypt.so
 vendor/lib/libdre.so
 vendor/lib/libdynamiclog.so
 vendor/lib/libfidoauthnr_v2.so
-vendor/lib/libflatbuffers-cpp.so
 vendor/lib/libformatConverter.unifunc.so
 vendor/lib/libgamehdr.so
 vendor/lib/libgralloc_helper.unifunc.so
@@ -1904,7 +1819,6 @@ vendor/lib/libnwk_opt_halwrap_vendor.so
 vendor/lib/libpadm.so
 vendor/lib/libpkm.so
 vendor/lib/librt_extamp_intf.so
-vendor/lib/libruy.so
 vendor/lib/libsecfr_engine.so
 vendor/lib/libsecfr_model.so
 vendor/lib/libsecure_storage.so
@@ -1935,13 +1849,10 @@ vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
-vendor/lib64/libbinderdebug.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libconnfem.so
-vendor/lib64/libcppbor_external.so
-vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdecrypt.so
 vendor/lib64/libdk_vnd_service_core.so
@@ -1950,7 +1861,6 @@ vendor/lib64/libdsms_vendor.so
 vendor/lib64/libdynamiclog.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfidoauthnr_v2.so
-vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libformatConverter.unifunc.so
 vendor/lib64/libgamehdr.so
@@ -1971,7 +1881,6 @@ vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libpadm.so
 vendor/lib64/libpkm.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libruy.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsec2mtk_conversion.so
 vendor/lib64/libsec_skpmHalTlc.so
@@ -1996,7 +1905,6 @@ vendor/lib64/libvdis.uniplugin@1.0.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
-vendor/lib64/libz_stable.so
 vendor/lib64/nwk_opt_imp.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
