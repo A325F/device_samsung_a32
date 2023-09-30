@@ -324,6 +324,7 @@ PRODUCT_PACKAGES += \
     init.mt6768.rc \
     init.mt6768.usb.rc \
     init.mt6769t.rc \
+    init.project.rc \
     init.recovery.mt6768.rc \
     init.recovery.mt6769t.rc \
     init.recovery.samsung.rc \
