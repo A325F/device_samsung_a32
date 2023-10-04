@@ -246,6 +246,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
+# OMX
+PRODUCT_PACKAGES += \
+    libepicoperator
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
