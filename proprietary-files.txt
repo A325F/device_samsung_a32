@@ -547,6 +547,7 @@ vendor/lib/libmtkcam_debugutils.so
 vendor/lib/libmtkcam_grallocutils.so
 vendor/lib/libmtkcam_stdutils.so
 vendor/lib/libmtkcam_ulog.so
+vendor/lib/libsensorndkbridge.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libvideobeauty.uniplugin@1.0.so
 vendor/lib/s5kgw3_mipi_raw_tuning.so
@@ -751,6 +752,7 @@ vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libseccam_util.so
+vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty.uniplugin@1.0.so
