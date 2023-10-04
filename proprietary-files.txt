@@ -804,11 +804,6 @@ vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 
-# CAS
-vendor/bin/hw/android.hardware.cas@1.2-service-lazy
-vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
-
 # Display
 lib/vendor.mediatek.hardware.mms@1.0.so
 lib/vendor.mediatek.hardware.mms@1.1.so

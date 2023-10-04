@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
