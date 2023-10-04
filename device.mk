@@ -164,6 +164,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.a32
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
