@@ -553,7 +553,6 @@ vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libbwc.so
 vendor/lib/libcam.halsensor.hwintegration.so
 vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libdpframework.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libged.so
@@ -576,12 +575,10 @@ vendor/lib/liblivefocus_capture_engine.so
 vendor/lib/liblivefocus_preview.uniplugin@1.0.so
 vendor/lib/liblivefocus_preview_engine.so
 vendor/lib/libmpbase.so
-vendor/lib/libmtk_drvb.so
 vendor/lib/libmtkcam_debugutils.so
 vendor/lib/libmtkcam_grallocutils.so
 vendor/lib/libmtkcam_stdutils.so
 vendor/lib/libmtkcam_ulog.so
-vendor/lib/libpq_prot.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libvideobeauty.uniplugin@1.0.so
 vendor/lib/s5kgw3_mipi_raw_tuning.so
@@ -687,7 +684,6 @@ vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcameracustom.eis.so
 vendor/lib64/libcameracustom.plugin.so
 vendor/lib64/libcameracustom.so
-vendor/lib64/libdpframework.so
 vendor/lib64/libdualcam_refocus_image.so
 vendor/lib64/libdualcam_refocus_video.so
 vendor/lib64/libeffecthal.base.so
@@ -726,7 +722,6 @@ vendor/lib64/liblpcnr.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
-vendor/lib64/libmtk_drvb.so
 vendor/lib64/libmtkcam.eventcallback.so
 vendor/lib64/libmtkcam.featurepipe.capture.so
 vendor/lib64/libmtkcam.featurepipe.streaming.so
@@ -787,7 +782,6 @@ vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkcam_vsync_util.so
 vendor/lib64/libmtkisp_metadata.so
-vendor/lib64/libpq_prot.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libseccam_util.so
@@ -854,7 +848,6 @@ vendor/lib/libNoFpsActor.so
 vendor/lib/libOpenCL.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
-vendor/lib/libnir_neon_driver.so
 vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/librgbwlightsensor.so
@@ -885,7 +878,6 @@ vendor/lib64/libcomposer_ext.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
 vendor/lib64/libmml.so
-vendor/lib64/libnir_neon_driver.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqparamparser.so
