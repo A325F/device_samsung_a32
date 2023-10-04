@@ -227,6 +227,7 @@ PRODUCT_COPY_FILES += \
 # Ndk
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
+    android.hardware.keymaster-V3-ndk_platform.vendor \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
