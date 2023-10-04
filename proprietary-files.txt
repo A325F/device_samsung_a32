@@ -1190,7 +1190,6 @@ vendor/lib/libpredeflicker_native.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_foundation_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libthha.so
 vendor/lib/libvc1dec_sa.ca7.so
