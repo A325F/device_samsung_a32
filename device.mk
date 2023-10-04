@@ -224,6 +224,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp_policy/samsung.software.media.c2-base-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-base-policy \
     $(LOCAL_PATH)/configs/seccomp_policy/samsung.software.media.c2-ext-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 
+# Ndk
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk_platform.vendor
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
