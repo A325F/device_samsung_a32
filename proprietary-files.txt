@@ -1289,9 +1289,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
-vendor/lib/hw/power.default.so
 vendor/lib/libpower_timer.so
-vendor/lib64/hw/power.default.so
 vendor/lib64/libpower_timer.so
 
 # Radio
@@ -1577,9 +1575,7 @@ vendor/etc/init/android.hardware.usb@1.3-service.coral.rc
 vendor/bin/hw/vendor.samsung.hardware.vibrator-service
 vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
-vendor/lib/hw/vibrator.default.so
 vendor/lib/hw/vibrator.mt6768.so
-vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.mt6768.so
 vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk_platform.so
 
@@ -1699,7 +1695,6 @@ vendor/etc/vintf/manifest/deviceManifest.xml
 vendor/etc/vintf/manifest/face-default-sec.xml
 vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
-vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
