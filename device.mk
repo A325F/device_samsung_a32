@@ -96,6 +96,16 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor
 
+# Codec2
+PRODUCT_PACKAGES += \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_simple_component.vendor \
+    libcodec2_soft_common.vendor \
+    libcodec2_vndk.vendor
+
 # Disable SF configstore
 PRODUCT_PACKAGES += \
     disable_configstore
