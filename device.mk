@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor
 
 PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor \
     libdng_sdk.vendor
 
 # Disable SF configstore

@@ -522,7 +522,6 @@ vendor/lib/libLocalTM_wrapper.camera.samsung.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libbwc.so
 vendor/lib/libcam.halsensor.hwintegration.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libged.so
@@ -649,7 +648,6 @@ vendor/lib64/libcamdrv_imem.so
 vendor/lib64/libcamdrv_isp.so
 vendor/lib64/libcamdrv_tuning_mgr.so
 vendor/lib64/libcamdrv_twin.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcameracustom.eis.so
 vendor/lib64/libcameracustom.plugin.so
 vendor/lib64/libcameracustom.so
