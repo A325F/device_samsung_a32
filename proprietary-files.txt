@@ -1408,10 +1408,6 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 # Radio (IMS)
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 
-# RenderScript
-vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
-
 # SAIV
 vendor/etc/saiv/gae/MeanFea.bin
 vendor/etc/saiv/gae/ParaFea.bin
