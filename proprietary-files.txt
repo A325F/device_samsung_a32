@@ -1088,15 +1088,6 @@ vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/mnl.prop
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service-samsung
-vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib/vendor.samsung.hardware.thermal@1.0.so
-vendor/lib64/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
-
 # Hyper
 vendor/bin/hw/vendor.samsung.hardware.hyper-service
 vendor/etc/hyper/config_chipset.json
@@ -1398,8 +1389,6 @@ vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite
 vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite
 
 # Security
-vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service
 vendor/bin/vaultkeeperd
 vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service
 vendor/bin/vendor.samsung.hardware.security.hdcp.wifidisplay-service
@@ -1408,10 +1397,8 @@ vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 vendor/etc/init/vaultkeeper_common.rc
-vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.hdcp.wifidisplay-default.rc
-vendor/etc/init/vendor.samsung.hardware.security.skpm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/init/wsm-service.rc
 vendor/etc/vintf/manifest/engmode_manifest.xml
@@ -1429,17 +1416,12 @@ vendor/lib64/libengmode_tlc.so
 vendor/lib64/libhal.wsm.samsung.so
 vendor/lib64/libwsmd_functions.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
-vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.security.skpm@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.sensorhub.so
@@ -1533,39 +1515,16 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib/hw/thermal_hal.so
 vendor/lib/libmtcloader.so
+vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/hw/thermal_hal.so
 vendor/lib64/libmtcloader.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # TLC
-vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.1-service
-vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service
-vendor/bin/hw/vendor.samsung.hardware.tlc.payment@1.0-service
-vendor/etc/init/vendor.samsung.hardware.tlc.hdm@1.1-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
 vendor/lib/libtlcWidevineModularDrm.so
-vendor/lib/vendor.samsung.hardware.tlc.hdm@1.0.so
-vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1-impl.so
-vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1.so
-vendor/lib/vendor.samsung.hardware.tlc.payment@1.0-impl.so
-vendor/lib/vendor.samsung.hardware.tlc.payment@1.0.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_iccc.so
-vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.0.so
-vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1-impl.so
-vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1.so
-vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so
-vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
-vendor/lib64/vendor.samsung.hardware.tlc.kg@1.0.so
-vendor/lib64/vendor.samsung.hardware.tlc.kg@1.1.so
-vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0-impl.so
-vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0.so
 
 # Translator
 vendor/lib/libtranslator_mapi_v3.0.so
@@ -1627,12 +1586,6 @@ vendor/lib64/vendor.samsung.hardware.wifi@2.3.so
 
 # Miscellaneous
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.authfw@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.light-service
-vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
 vendor/bin/AgentTest
 vendor/bin/add.pb
 vendor/bin/cass
@@ -1674,7 +1627,6 @@ vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
 vendor/etc/init/dsmsca.rc
 vendor/etc/init/emservice.rc
-vendor/etc/init/face-default-sec.rc
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.connfem.rc
@@ -1689,25 +1641,15 @@ vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
-vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 vendor/etc/init/vendor.sem.rilchip.rc
 vendor/etc/str/str_preference_data.dat
 vendor/etc/vintf/manifest/deviceManifest.xml
-vendor/etc/vintf/manifest/face-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 vendor/etc/SetMultiCal.bin
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/armnn_app.config
@@ -1779,8 +1721,6 @@ vendor/lib/libuuid.so
 vendor/lib/libvdis.uniplugin@1.0.so
 vendor/lib/libvdis_core.so
 vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so
-vendor/lib/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
-vendor/lib/vendor.samsung.hardware.hqm@1.0.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libMcClient.so
 vendor/lib64/libSEF.quram.so
@@ -1859,12 +1799,6 @@ vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.meta@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
-vendor/lib64/vendor.samsung.hardware.authfw@1.0.so
-vendor/lib64/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
-vendor/lib64/vendor.samsung.hardware.hqm@1.0.so
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
 
 vendor/lib/libapmonitor_vendor.so

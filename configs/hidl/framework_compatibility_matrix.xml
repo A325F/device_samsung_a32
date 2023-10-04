@@ -16,13 +16,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.biometrics.face</name>
-        <interface>
-            <name>IFace</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
         <version>2</version>
         <interface>
@@ -42,14 +35,6 @@
             <name>IDrmFactory</name>
             <instance>clearkey</instance>
             <instance>widevine</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.light</name>
-        <version>2</version>
-        <interface>
-            <name>ILights</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -254,14 +239,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.biometrics.fingerprint</name>
-        <version>3.0</version>
-        <interface>
-            <name>ISehBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.bluetooth.audio</name>
         <version>2.0-1</version>
         <interface>
@@ -362,15 +339,7 @@
             <instance>slot2</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.security.drk</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehDrk</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.security.engmode</name>
         <version>1.0</version>
         <interface>
@@ -383,14 +352,6 @@
         <version>1-2</version>
         <interface>
             <name>ISehHdcp</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.security.skpm</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSkpm</name>
             <instance>default</instance>
         </interface>
     </hal>

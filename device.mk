@@ -250,7 +250,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
     android.hardware.keymaster-V3-ndk_platform.vendor \
-    android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
 # OMX
@@ -405,10 +404,11 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
-    android.hardware.sensors@2.1.vendor \
-    android.frameworks.sensorservice@1.0
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.sensors@2.1.vendor
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
