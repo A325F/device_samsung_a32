@@ -108,6 +108,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service
 
 PRODUCT_PACKAGES += \
+    libgrallocusage.vendor \
     libdrm.vendor
 
 # DRM

@@ -527,7 +527,6 @@ vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libged.so
 vendor/lib/libgralloc_extra.so
-vendor/lib/libgrallocusage.so
 vendor/lib/libgz_uree.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libheifcapture.so
@@ -668,7 +667,6 @@ vendor/lib64/libfeature_rss.so
 vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libged.so
 vendor/lib64/libgralloc_extra.so
-vendor/lib64/libgrallocusage.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libheichal.so
@@ -803,7 +801,6 @@ vendor/lib/egl/libMEOW_data.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/mt6768/libnir_neon_driver.so
@@ -830,7 +827,6 @@ vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
