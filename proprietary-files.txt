@@ -31,17 +31,9 @@ vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/audiocmdservice_atci.rc
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6768.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6768.so
 vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib/hw/audio.usb.default.so
-vendor/lib/hw/audio_policy.stub.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/libMtkSpeechEnh.so
@@ -49,7 +41,6 @@ vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_iir.so
 vendor/lib/libaudio-ril.so
 vendor/lib/libaudio_param_parser-vnd.so
-vendor/lib/libaudioclient_aidl_conversion.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocomponentengine_vendor.so
@@ -57,7 +48,6 @@ vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
-vendor/lib/libaudiofoundation.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
@@ -75,17 +65,9 @@ vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
-vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
-vendor/lib64/hw/android.hardware.audio@2.0-impl.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6768.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6768.so
 vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libMtkSpeechEnh.so
@@ -93,7 +75,6 @@ vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libaudio-ril.so
 vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocomponentengine_vendor.so
@@ -101,7 +82,6 @@ vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
@@ -124,8 +104,6 @@ vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/soundfx/libdynproc.so
-vendor/lib/soundfx/libhapticgenerator.so
 vendor/lib/soundfx/libmyspace.so
 vendor/lib/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib/soundfx/libswdap.so
@@ -137,12 +115,9 @@ vendor/lib/lib_SoundBooster_ver1050.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib/spatializer-aidl-cpp.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libmyspace.so
 vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
@@ -154,7 +129,6 @@ vendor/lib64/lib_SoundBooster_ver1050.so
 vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/spatializer-aidl-cpp.so
 
 # Audio configs
 vendor/etc/audio_param/ODM/3GVTDV_AudioParam.xml
@@ -483,20 +457,16 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Bluetooth (A2DP)
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
 vendor/lib/libsehbluetooth_audio_session.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.0.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.1.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/libsehbluetooth_audio_session.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
@@ -1495,9 +1465,6 @@ vendor/lib64/libsnap_vndk.so
 vendor/lib64/libsnaplite_native.so
 vendor/lib64/libsnaplite_wrapper.so
 vendor/lib64/vendor.samsung.hardware.snap-V1-ndk_platform.so
-
-# Soundtrigger
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
 
 # TEE
 vendor/lib/libTEECommon.so

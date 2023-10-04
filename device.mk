@@ -12,16 +12,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.bluetooth.audio-impl \
+    libaudioclient_aidl_conversion \
+    libaudiofoundation.vendor \
+    spatializer-aidl-cpp.vendor
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    audio_policy.stub
 
 PRODUCT_PACKAGES += \
     libalsautils \
     libtinycompress
+
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.3.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
