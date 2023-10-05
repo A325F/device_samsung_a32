@@ -58,9 +58,6 @@ function blob_fixup {
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
-        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
-            "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
-            ;;
         vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service)
             ${PATCHELF} --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
             ;;

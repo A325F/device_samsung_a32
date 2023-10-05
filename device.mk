@@ -269,6 +269,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
     android.hardware.keymaster-V3-ndk_platform.vendor \
+    android.hardware.power-V2-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
 # OMX
