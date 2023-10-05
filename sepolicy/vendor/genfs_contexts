@@ -1,0 +1,2 @@
+# Label wakeup nodes
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup/wakeup               u:object_r:sysfs_wakeup:s0

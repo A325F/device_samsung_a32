@@ -1,0 +1,8 @@
+# tzts_daemon service
+type tztsd, domain;
+type tztsd_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(tztsd)
+
+allow tztsd property_socket:sock_file { write };
+allow tztsd init:unix_stream_socket connectto;

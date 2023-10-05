@@ -1,0 +1,3 @@
+allow mtk_hal_audio mtk_hal_audio:dir search;
+allow mtk_hal_audio mtk_hal_audio:file { getattr map open read };
+allow mtk_hal_audio rild:unix_stream_socket connectto;

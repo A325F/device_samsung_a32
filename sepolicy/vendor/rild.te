@@ -1,0 +1,9 @@
+allow rild tun_device:chr_file { ioctl open read write };
+allow rild cassd:dir search;
+allow rild cassd:file { getattr open read };
+allow rild mtk_hal_audio:dir search;
+allow rild vendor_data_file:dir { add_name open read remove_name write };
+allow rild mtk_hal_audio:file { getattr open read };
+allow rild vendor_data_file:file { create getattr ioctl lock open read unlink write };
+allow rild rild:tun_socket create;
+allow rild rild:unix_stream_socket connectto;

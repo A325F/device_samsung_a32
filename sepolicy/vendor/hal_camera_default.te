@@ -1,0 +1,11 @@
+allow hal_camera_default hal_camera_default:capability sys_nice;
+allow hal_camera_default CAM_CAL_DRV_device:chr_file { ioctl open read write };
+allow hal_camera_default camera_isp_device:chr_file { map open read write };
+allow hal_camera_default flashlight_device:chr_file { ioctl open read write };
+allow hal_camera_default kd_camera_hw_device:chr_file { ioctl open read write };
+allow hal_camera_default mnt_user_file:dir search;
+allow hal_camera_default nvcfg_file:dir search;
+allow hal_camera_default proc_thermal:dir search;
+allow hal_camera_default vendor_camera_dump_file:dir { add_name create getattr write };
+allow hal_camera_default vendor_camera_dump_file:file { open create getattr write };
+allow hal_camera_default sysfs_boot_mode:file { open read };

@@ -1,0 +1,8 @@
+# hal_hyper_default service
+type hal_hyper_default, domain, halserverdomain, halclientdomain, hal_power_client;
+type hal_hyper_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_hyper_default)
+
+allow hal_hyper_default sysfs:file { getattr open read write };
+allow hal_hyper_default cgroup:file getattr;

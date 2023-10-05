@@ -1,0 +1,1 @@
+get_prop(hal_power_default, vendor_mtk_powerhal_prop)

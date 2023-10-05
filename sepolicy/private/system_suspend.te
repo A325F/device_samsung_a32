@@ -1,0 +1,3 @@
+allow system_suspend sysfs:dir { open read };
+allow system_suspend sysfs_rtc:dir { open read };
+allow system_suspend sysfs_rtc:file { getattr open read };

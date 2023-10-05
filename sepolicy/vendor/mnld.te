@@ -1,0 +1,1 @@
+allow mnld hal_gnss_default:unix_dgram_socket sendto;

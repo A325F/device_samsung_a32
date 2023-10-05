@@ -1,0 +1,15 @@
+allow init wmtWifi_device:chr_file { open write };
+allow init cgroup:file getattr;
+allow init proc:file write;
+allow init sysfs_devices_block:file { open write };
+allow init vendor_file:file execute;
+allow init proc:filesystem associate;
+allow init lk_block_device:lnk_file relabelto;
+allow init init:netlink_generic_socket { bind create getattr read setopt write };
+allow init init:udp_socket ioctl;
+allow init init:unix_stream_socket connectto;
+
+get_prop(init, vts_status_prop)
+set_prop(init, apexd_prop)
+set_prop(init, radio_control_prop)
+set_prop(init, vendor_mtk_wifi_hotspot_prop)

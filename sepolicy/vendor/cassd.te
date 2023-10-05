@@ -1,0 +1,15 @@
+# cassd service
+type cassd, domain;
+type cassd_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(cassd)
+
+allow cassd cassd:capability2 block_suspend;
+allow cassd cassd:dir search;
+allow cassd cassd:file { getattr ioctl map open read write };
+allow cassd kmsg_device:chr_file getattr;
+allow cassd vndbinder_device:chr_file { ioctl map open read write };
+allow cassd sysfs_wake_lock:file { open read write };
+allow cassd socket_device:sock_file write;
+allow cassd rild:unix_stream_socket connectto;
+allow cassd vaultkeeperd:unix_stream_socket connectto;

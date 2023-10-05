@@ -1,0 +1,6 @@
+allow hal_sensors_default iio_device:chr_file { open read };
+allow hal_sensors_default sysfs:dir { open read search };
+allow hal_sensors_default sysfs_sensor:dir search;
+allow hal_sensors_default sysfs_sensor:file { getattr open read write };
+allow hal_sensors_default property_socket:sock_file { write };
+allow hal_sensors_default init:unix_stream_socket connectto;

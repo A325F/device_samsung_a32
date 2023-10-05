@@ -1,0 +1,64 @@
+# camera
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@4\.[0-9]-service_64         u:object_r:hal_camera_default_exec:s0
+
+# cass
+/vendor/bin/cass                    u:object_r:cassd_exec:s0
+
+# dsmca
+/vendor/bin/dsmsca            u:object_r:dsmsca_exec:s0
+
+# emservice
+/(vendor|system/vendor)/bin/emservice        u:object_r:emservice_exec:s0
+
+# engmode
+/(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.engmode@1\.0-service       u:object_r:hal_engmode_default_exec:s0
+
+# gnss
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service            u:object_r:hal_gnss_default_exec:s0
+
+# hdcp
+/vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay-service    u:object_r:hal_hdcp_default_exec:s0
+
+# hyper
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.hyper-service          u:object_r:hal_hyper_default_exec:s0
+
+# light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.a32  u:object_r:hal_light_default_exec:s0
+
+# macloader
+/(vendor|system/vendor)/bin/hw/macloader      u:object_r:macloader_exec:s0
+
+# mediacodec
+/(vendor|system/vendor)/bin/hw/samsung\.software\.media\.c2@1\.0-service            u:object_r:mediacodec_exec:s0
+
+# proca
+/(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.proca@2\.0-service    u:object_r:hal_proca_default_exec:s0
+
+# secril_config_svc
+/vendor/bin/secril_config_svc               u:object_r:vendor_secril_config_svc_exec:s0
+
+# sysinput
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service                      u:object_r:hal_sec_inputdev_default_exec:s0
+
+# thermal
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                 u:object_r:hal_thermal_default_exec:s0
+
+# tzdaemon
+/(vendor|system/vendor)/bin/tzdaemon      u:object_r:tzdaemon_exec:s0
+
+# tzts_daemon
+/(vendor|system/vendor)/bin/tzts_daemon      u:object_r:tztsd_exec:s0
+
+# usb
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.3-service\.coral            u:object_r:hal_usb_default_exec:s0
+
+# vaultkeeperd
+/vendor/bin/vaultkeeperd	u:object_r:vaultkeeperd_exec:s0
+/vendor/bin/vendor\.samsung\.hardware\.security\.vaultkeeper@2\.0-service      u:object_r:vaultkeeperd_exec:s0
+
+# vibrator
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.vibrator-service               u:object_r:hal_vibrator_default_exec:s0
+
+# wifi
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.wifi@2\.0-service           u:object_r:hal_wifi_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy\.mt6768      u:object_r:hal_wifi_default_exec:s0

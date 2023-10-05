@@ -1,0 +1,10 @@
+# tzdaemon service
+type tzdaemon, domain;
+type tzdaemon_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(tzdaemon)
+
+allow tzdaemon mnt_vendor_file:dir { add_name create open read remove_name rmdir write };
+allow tzdaemon mnt_vendor_file:file { create getattr open read rename unlink write };
+allow tzdaemon property_socket:sock_file { write };
+allow tzdaemon init:unix_stream_socket connectto;

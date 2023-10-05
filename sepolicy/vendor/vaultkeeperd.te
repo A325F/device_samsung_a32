@@ -1,0 +1,12 @@
+# vaultkeeperd service
+type vaultkeeperd, domain;
+type vaultkeeperd_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vaultkeeperd)
+
+allow vaultkeeperd kmsg_device:chr_file getattr;
+allow vaultkeeperd socket_device:dir { add_name write };
+allow vaultkeeperd property_socket:sock_file { write };
+allow vaultkeeperd socket_device:sock_file { create setattr };
+allow vaultkeeperd init:unix_stream_socket connectto;
+allow vaultkeeperd vaultkeeperd:unix_stream_socket connectto;

@@ -1,0 +1,5 @@
+# hal_engmode_default service
+type hal_engmode_default, domain, halserverdomain;
+type hal_engmode_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_engmode_default)
