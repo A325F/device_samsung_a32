@@ -1185,7 +1185,6 @@ vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libpredeflicker_native.so
-vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_foundation_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
@@ -1233,7 +1232,6 @@ vendor/lib64/libformatter.so
 vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libimgsensorca.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_foundation_vendor.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libthha.so

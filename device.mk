@@ -51,6 +51,9 @@ PRODUCT_PACKAGES += \
     libhapticgenerator \
     libtinycompress \
     libnbaio_mono \
+
+PRODUCT_PACKAGES += \
+    libstagefright_bufferpool@2.0.1.vendor \
     libstagefright_foundation
 
 PRODUCT_PACKAGES += \
