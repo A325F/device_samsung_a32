@@ -9,15 +9,33 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0.vendor \
     android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-util.vendor \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@7.0.vendor \
+    android.hardware.audio@7.0-util.vendor \
+    android.hardware.audio.common@2.0-util.vendor \
+    android.hardware.audio.common@5.0.vendor \
+    android.hardware.audio.common@6.0.vendor \
+    android.hardware.audio.common@6.0-util.vendor \
+    android.hardware.audio.common@7.0-enums.vendor \
+    android.hardware.audio.common@7.0.vendor \
+    android.hardware.audio.common@7.0-util.vendor \
+    android.hardware.audio.common-util.vendor \
+    android.hardware.audio.effect@2.0.vendor \
     android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@2.0-util.vendor \
+    android.hardware.audio.effect@6.0.vendor \
     android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@6.0-util.vendor \
+    android.hardware.audio.effect@7.0.vendor \
     android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.effect@7.0-util.vendor \
     android.hardware.bluetooth.audio-impl \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
+    libbluetooth_audio_session \
     spatializer-aidl-cpp.vendor
 
 PRODUCT_PACKAGES += \
@@ -29,7 +47,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libalsautils \
-    libtinycompress
+    libdynproc \
+    libhapticgenerator \
+    libtinycompress \
+    libnbaio_mono \
+    libstagefright_foundation
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \

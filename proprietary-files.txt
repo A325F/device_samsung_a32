@@ -31,6 +31,8 @@ vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/audiocmdservice_atci.rc
+vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
+vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6768.so
 vendor/lib/hw/audio.r_submix.mt6768.so
 vendor/lib/hw/audio.sec_primary.default.so
@@ -65,6 +67,8 @@ vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
+vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6768.so
 vendor/lib64/hw/audio.r_submix.mt6768.so
 vendor/lib64/hw/audio.sec_primary.default.so
@@ -435,6 +439,7 @@ vendor/etc/aurisys_config.xml
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/bin/autobt
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
@@ -445,6 +450,7 @@ vendor/lib/libbt-vendor.so
 vendor/lib/libnvram.so
 vendor/lib/libnvram_sec.so
 vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
