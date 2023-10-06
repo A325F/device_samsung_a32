@@ -98,6 +98,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
     android.hardware.camera.device@3.3.vendor \
     android.hardware.camera.device@3.4.vendor \
@@ -118,6 +119,14 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor
 
+PRODUCT_PACKAGES += \
+    android.frameworks.cameraservice.common@2.0.vendor \
+    android.frameworks.cameraservice.device@2.0.vendor \
+    android.frameworks.cameraservice.device@2.1.vendor \
+    android.frameworks.cameraservice.service@2.0.vendor \
+    android.frameworks.cameraservice.service@2.1.vendor \
+    android.frameworks.cameraservice.service@2.2.vendor
+
 # Codec2
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
@@ -132,6 +141,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common@1.2.vendor \
+    android.hardware.graphics.mapper@2.0.vendor \
+    android.hardware.graphics.mapper@3.0.vendor \
     android.hardware.graphics.mapper@4.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor
 
