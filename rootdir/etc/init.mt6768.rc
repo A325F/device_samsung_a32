@@ -145,8 +145,6 @@ on fs
     write /proc/sys/vm/swappiness 130
     write /sys/kernel/mm/swap/vma_ra_enabled false
 
-    mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on post-fs
     write /proc/bootprof "INIT:post-fs"
 
