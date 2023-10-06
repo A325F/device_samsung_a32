@@ -55,6 +55,9 @@ fi
 
 function blob_fixup {
     case "$1" in
+        vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
+            "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
