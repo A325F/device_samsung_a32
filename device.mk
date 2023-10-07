@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0.vendor \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.effect@7.0-util.vendor \
-    android.hardware.bluetooth.audio-impl \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
@@ -88,6 +87,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.0.vendor \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor
 
