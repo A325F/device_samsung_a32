@@ -1391,6 +1391,9 @@ vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Radio (IMS)
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 
 # SAIV
