@@ -8,6 +8,7 @@ allow init lk_block_device:lnk_file relabelto;
 allow init init:netlink_generic_socket { bind create getattr read setopt write };
 allow init init:udp_socket ioctl;
 allow init init:unix_stream_socket connectto;
+allow init sysfs_ski_display_writable:file { open write };
 
 get_prop(init, vts_status_prop)
 set_prop(init, apexd_prop)
