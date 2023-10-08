@@ -1,0 +1,1 @@
+allow hal_gatekeeper_default tz_user_device:chr_file { open read write ioctl map };
