@@ -37,6 +37,10 @@
 # secril_config_svc
 /vendor/bin/secril_config_svc               u:object_r:vendor_secril_config_svc_exec:s0
 
+# sensor
+/dev/shub_data_injection                u:object_r:shub_device:s0
+/dev/shub_sensorhub                     u:object_r:shub_device:s0
+
 # sysinput
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service                      u:object_r:hal_sec_inputdev_default_exec:s0
 
