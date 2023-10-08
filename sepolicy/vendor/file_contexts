@@ -7,6 +7,9 @@
 # dsmca
 /vendor/bin/dsmsca            u:object_r:dsmsca_exec:s0
 
+# drb
+/dev/drb						u:object_r:drb_device:s0
+
 # emservice
 /(vendor|system/vendor)/bin/emservice        u:object_r:emservice_exec:s0
 
