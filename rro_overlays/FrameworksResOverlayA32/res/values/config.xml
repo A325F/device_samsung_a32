@@ -506,5 +506,11 @@
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
 
     <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">true</bool>     
+    <bool name="config_pocketModeSupported">true</bool>
+
+    <!-- The default peak refresh rate for a given device. -->
+    <integer name="config_defaultPeakRefreshRate">90</integer>
+
+    <!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">90</integer>    
 </resources>
