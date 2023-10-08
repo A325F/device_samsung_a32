@@ -1,3 +1,4 @@
 allow kernel sysfs_sensor:dir search;
 allow kernel sysfs_sensor:file { open read };
 allow kernel cache_file:file getattr;
+allow kernel sysfs_sec:file { open read };

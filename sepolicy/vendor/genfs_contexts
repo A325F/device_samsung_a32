@@ -1,2 +1,5 @@
+# Hall
+genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect u:object_r:sysfs_sec:s0
+
 # Label wakeup nodes
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup/wakeup               u:object_r:sysfs_wakeup:s0
