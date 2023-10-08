@@ -47,6 +47,9 @@
 /dev/shub_data_injection                u:object_r:shub_device:s0
 /dev/shub_sensorhub                     u:object_r:shub_device:s0
 
+# snap
+/(vendor|system/vendor)/bin/snap_utility_64					u:object_r:snap_utility_exec:s0
+
 # sysinput
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service                      u:object_r:hal_sec_inputdev_default_exec:s0
 
