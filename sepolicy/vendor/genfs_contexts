@@ -1,3 +1,6 @@
+# Battery
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply   u:object_r:sysfs_battery:s0
+
 # Hall
 genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect u:object_r:sysfs_sec:s0
 
