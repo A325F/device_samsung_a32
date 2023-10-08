@@ -23,7 +23,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.hyper-service          u:object_r:hal_hyper_default_exec:s0
 
 # light
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.a32  u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service  u:object_r:hal_light_default_exec:s0
 
 # macloader
 /(vendor|system/vendor)/bin/hw/macloader      u:object_r:macloader_exec:s0

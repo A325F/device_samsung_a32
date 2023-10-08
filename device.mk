@@ -245,10 +245,6 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.a32
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
@@ -306,6 +302,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
     android.hardware.keymaster-V3-ndk_platform.vendor \
+    android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
