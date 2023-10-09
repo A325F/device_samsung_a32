@@ -1,1 +1,2 @@
-allow hal_health_default sysfs:file { getattr open read };
+allow hal_health_default sysfs_battery:dir search;
+allow hal_health_default sysfs_battery:file { getattr open read };
