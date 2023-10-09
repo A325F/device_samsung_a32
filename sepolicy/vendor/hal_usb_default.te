@@ -1,1 +1,2 @@
 allow hal_usb_default sysfs_usb_nonplat:dir { open read search };
+allow hal_usb_default sysfs_battery:dir search;
