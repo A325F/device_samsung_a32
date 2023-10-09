@@ -17,3 +17,4 @@ allow macloader macloader:udp_socket { create ioctl };
 allow macloader init:unix_stream_socket connectto;
 
 set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
+set_prop(macloader, wifi_log_prop)
