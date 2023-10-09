@@ -7,3 +7,5 @@ init_daemon_domain(vendor_secril_config_svc)
 allow vendor_secril_config_svc mnt_vendor_file:file { getattr open read };
 allow vendor_secril_config_svc property_socket:sock_file { write };
 allow vendor_secril_config_svc init:unix_stream_socket connectto;
+
+set_prop(vendor_secril_config_svc, vendor_radio_prop)
