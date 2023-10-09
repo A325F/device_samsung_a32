@@ -1,3 +1,5 @@
 type vendor_radio_prop, property_type, vendor_property_type, vendor_public_property_type;
 type vendor_tzdaemon_prop, property_type, vendor_property_type, vendor_public_property_type, mtk_core_property_type;
 type vendor_tztsdaemon_prop, property_type, vendor_property_type, vendor_public_property_type;
+
+type vendor_sec_vaultkeeper_prop, property_type, vendor_property_type, vendor_public_property_type;

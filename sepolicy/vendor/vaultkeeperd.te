@@ -11,3 +11,5 @@ allow vaultkeeperd socket_device:sock_file { create setattr };
 allow vaultkeeperd init:unix_stream_socket connectto;
 allow vaultkeeperd vaultkeeperd:unix_stream_socket connectto;
 allow vaultkeeperd tz_user_device:chr_file { open read write ioctl map };
+
+set_prop(vaultkeeperd, vendor_sec_vaultkeeper_prop)
