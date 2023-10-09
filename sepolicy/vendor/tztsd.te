@@ -7,3 +7,5 @@ init_daemon_domain(tztsd)
 allow tztsd property_socket:sock_file { write };
 allow tztsd init:unix_stream_socket connectto;
 allow tztsd tz_user_device:chr_file { read write open ioctl map };
+
+set_prop(tztsd, vendor_tztsdaemon_prop)
