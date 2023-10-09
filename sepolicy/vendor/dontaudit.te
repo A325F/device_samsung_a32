@@ -1,1 +1,3 @@
 dontaudit vendor_init apexd_prop:property_service set;
+dontaudit vendor_secril_config_svc radio_prop:property_service set;
+dontaudit vendor_secril_config_svc radio_control_prop:property_service set;

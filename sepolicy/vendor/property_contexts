@@ -7,3 +7,5 @@ persist.sns.camera_light                     u:object_r:sns_camera_light_prop:s0
 
 vendor.bluetooth_nv_ver                     u:object_r:wifi_log_prop:s0
 vendor.wifi.dualconcurrent.interface                 u:object_r:wifi_log_prop:s0
+
+ro.multisim.                     		u:object_r:radio_prop:s0

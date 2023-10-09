@@ -1,0 +1,1 @@
+dontaudit surfaceflinger vendor_default_prop:file { getattr map open };
