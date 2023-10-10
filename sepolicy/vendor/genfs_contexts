@@ -23,3 +23,4 @@ genfscon sysfs /devices/platform/shub/iio:device7/name      u:object_r:sysfs_ss_
 
 # Thermistor
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temperature       u:object_r:sysfs_ss_writable:s0
