@@ -8,3 +8,4 @@ allow rild vendor_data_file:file { create getattr ioctl lock open read unlink wr
 allow rild rild:tun_socket create;
 allow rild rild:unix_stream_socket connectto;
 allow rild drb_device:chr_file { read write open getattr ioctl };
+allow rild radio_device:chr_file { read write open ioctl };

@@ -71,6 +71,15 @@
 # tziwsock
 /dev/tziwsock               u:object_r:tz_user_device:s0
 
+# umts_boot0
+/dev/umts_boot0			u:object_r:radio_device:s0
+
+# umts_ipc0
+/dev/umts_ipc0                      u:object_r:radio_device:s0
+
+# umts_ipc1
+/dev/umts_ipc1                      u:object_r:radio_device:s0
+
 # usb
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.3-service\.coral            u:object_r:hal_usb_default_exec:s0
 
