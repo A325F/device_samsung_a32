@@ -13,6 +13,7 @@ genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enable 
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup/wakeup               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:hall_ic/wakeup     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/shub/wakeup/wakeup     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10238000.gce/wakeup    u:object_r:sysfs_wakeup:s0
 
 # Panel
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     u:object_r:sysfs_ski_display_writable:s0

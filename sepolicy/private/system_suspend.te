@@ -3,3 +3,4 @@ allow system_suspend sysfs_rtc:dir { open read };
 allow system_suspend sysfs_rtc:file { getattr open read };
 allow system_suspend sysfs_battery:file { open read getattr };
 allow system_suspend sysfs_battery:dir { open read };
+allow system_suspend sysfs_wakeup:file { getattr open read };
