@@ -19,3 +19,5 @@ vendor.samsung.hardware.wifi.supplicant::ISehSupplicant     u:object_r:hal_wifi_
 vendor.samsung.hardware.audio::ISehDevicesFactory                              u:object_r:hal_audio_hwservice:s0
 
 vendor.samsung.hardware.bluetooth::ISehBluetooth      u:object_r:hal_bluetooth_hwservice:s0
+
+vendor.samsung.hardware.radio.channel::ISehChannel          u:object_r:hal_telephony_hwservice:s0

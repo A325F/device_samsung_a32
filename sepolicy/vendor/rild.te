@@ -9,3 +9,5 @@ allow rild rild:tun_socket create;
 allow rild rild:unix_stream_socket connectto;
 allow rild drb_device:chr_file { read write open getattr ioctl };
 allow rild radio_device:chr_file { read write open ioctl };
+
+allow rild hal_telephony_hwservice:hwservice_manager { add find };
