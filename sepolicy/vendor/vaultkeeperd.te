@@ -4,6 +4,8 @@ type vaultkeeperd_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(vaultkeeperd)
 
+binder_call(vaultkeeperd, hal_vaultkeeper_server_hwservice)
+
 allow vaultkeeperd kmsg_device:chr_file getattr;
 allow vaultkeeperd socket_device:dir { add_name write };
 allow vaultkeeperd property_socket:sock_file { write };
@@ -11,9 +13,11 @@ allow vaultkeeperd socket_device:sock_file { create setattr };
 allow vaultkeeperd init:unix_stream_socket connectto;
 allow vaultkeeperd vaultkeeperd:unix_stream_socket connectto;
 allow vaultkeeperd tz_user_device:chr_file { open read write ioctl map };
+allow vaultkeeperd steady_block_device:blk_file { ioctl open read write };
 
 set_prop(vaultkeeperd, vendor_sec_vaultkeeper_prop)
 get_prop(vaultkeeperd, vendor_tztsdaemon_prop)
+get_prop(vaultkeeperd, hwservicemanager_prop)
 
 allow vaultkeeperd hal_vaultkeeper_server_hwservice:hwservice_manager { add find };
 allow vaultkeeperd hidl_base_hwservice:hwservice_manager add;

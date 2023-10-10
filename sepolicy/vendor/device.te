@@ -2,3 +2,4 @@ type tz_user_device, dev_type, mlstrustedobject;
 type shub_device, dev_type;
 type drb_device, dev_type;
 type io_device, dev_type;
+type steady_block_device, dev_type;
