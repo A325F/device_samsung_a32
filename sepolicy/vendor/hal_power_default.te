@@ -1,6 +1,6 @@
 get_prop(hal_power_default, vendor_mtk_powerhal_prop)
 
-allow hal_power_default sysfs_ss_writable:file { open read };
+allow hal_power_default sysfs_ss_writable:file { open read write };
 allow hal_power_default sysfs_battery:dir search;
 
 allow hal_power_default hal_miscpower_hwservice:hwservice_manager { add find };
