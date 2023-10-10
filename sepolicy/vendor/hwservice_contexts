@@ -9,3 +9,5 @@ vendor.nxp.nxpnfc::INxpNfc  u:object_r:hal_nfc_hwservice:s0
 vendor.samsung.hardware.miscpower::ISehMiscPower                        u:object_r:hal_miscpower_hwservice:s0
 
 vendor.samsung.hardware.sysinput::ISehSysInputDev                          u:object_r:hal_sec_inputdev_hwservice:s0
+
+vendor.samsung.hardware.thermal::ISehThermal                         u:object_r:hal_thermal_hwservice:s0
