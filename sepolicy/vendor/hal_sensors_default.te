@@ -7,5 +7,6 @@ allow hal_sensors_default init:unix_stream_socket connectto;
 allow hal_sensors_default shub_device:chr_file { open read write };
 allow hal_sensors_default io_device:chr_file { open read ioctl };
 allow hal_sensors_default sysfs_sec:file { getattr open write };
+allow hal_sensors_default sysfs_ss_writable:file { getattr open read write };
 
 set_prop(hal_sensors_default, sns_camera_light_prop)
