@@ -13,3 +13,5 @@ allow cassd sysfs_wake_lock:file { open read write };
 allow cassd socket_device:sock_file write;
 allow cassd rild:unix_stream_socket connectto;
 allow cassd vaultkeeperd:unix_stream_socket connectto;
+
+get_prop(cassd, vendor_sec_vaultkeeper_prop)
