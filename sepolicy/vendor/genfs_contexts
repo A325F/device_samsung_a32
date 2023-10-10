@@ -12,5 +12,8 @@ genfscon sysfs /devices/platform/shub/wakeup/wakeup     u:object_r:sysfs_wakeup:
 # Panel
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     u:object_r:sysfs_ski_display_writable:s0
 
+# Sensors
+genfscon sysfs /devices/virtual/sec/tsp/cmd     u:object_r:sysfs_sec:s0
+
 # Thermistor
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature       u:object_r:sysfs_ss_writable:s0
