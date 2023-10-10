@@ -1,2 +1,3 @@
 type sysfs_sec, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_ski_display_writable, fs_type, sysfs_type;
+type sysfs_ss_writable, fs_type, sysfs_type;
