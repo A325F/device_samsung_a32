@@ -1566,6 +1566,7 @@ vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/init.thermal_manager.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/etc/btcon.json
 vendor/lib/hw/thermal_hal.so
 vendor/lib/libmtcloader.so
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
