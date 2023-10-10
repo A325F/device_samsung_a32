@@ -1,2 +1,3 @@
 type hal_engmode_hwservice, hwservice_manager_type;
 type hal_miscpower_hwservice, hwservice_manager_type;
+type hal_sec_inputdev_hwservice, hwservice_manager_type;
