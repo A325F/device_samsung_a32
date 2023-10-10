@@ -14,3 +14,6 @@ allow vaultkeeperd tz_user_device:chr_file { open read write ioctl map };
 
 set_prop(vaultkeeperd, vendor_sec_vaultkeeper_prop)
 get_prop(vaultkeeperd, vendor_tztsdaemon_prop)
+
+allow vaultkeeperd hal_vaultkeeper_server_hwservice:hwservice_manager { add find };
+allow vaultkeeperd hidl_base_hwservice:hwservice_manager add;
