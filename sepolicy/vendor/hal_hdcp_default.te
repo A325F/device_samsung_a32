@@ -3,3 +3,5 @@ type hal_hdcp_default, domain, halserverdomain;
 type hal_hdcp_default_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(hal_hdcp_default)
+
+allow hal_hdcp_default hal_hdcp_service:service_manager add;
