@@ -15,3 +15,5 @@ vendor.samsung.hardware.thermal::ISehThermal                         u:object_r:
 vendor.samsung.hardware.wifi::ISehWifi                  u:object_r:hal_wifi_hwservice:s0
 
 vendor.samsung.hardware.wifi.supplicant::ISehSupplicant     u:object_r:hal_wifi_supplicant_hwservice:s0
+
+vendor.samsung.hardware.audio::ISehDevicesFactory                              u:object_r:hal_audio_hwservice:s0
