@@ -28,6 +28,9 @@
 # io
 /dev/batch_io   u:object_r:io_device:s0
 
+# input
+/sys/class/sec/tsp/input/enabled              u:object_r:sysfs_ss_writable:s0
+
 # light
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.light-service          u:object_r:hal_light_default_exec:s0
 
