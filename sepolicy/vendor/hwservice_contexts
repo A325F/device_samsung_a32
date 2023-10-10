@@ -1,1 +1,3 @@
 vendor.samsung.hardware.camera.provider::ISehCameraProvider		u:object_r:hal_camera_hwservice:s0
+
+vendor.samsung.hardware.security.engmode::ISehEngmode                   u:object_r:hal_engmode_hwservice:s0
