@@ -18,6 +18,9 @@ genfscon sysfs /devices/platform/10238000.gce/wakeup    u:object_r:sysfs_wakeup:
 # Panel
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     u:object_r:sysfs_ski_display_writable:s0
 
+# Power
+genfscon sysfs /power/cpufreq_max_limit     u:object_r:sysfs_power:s0
+
 # Sensors
 genfscon sysfs /devices/virtual/sec/tsp/cmd     u:object_r:sysfs_sec:s0
 genfscon sysfs /devices/platform/shub/iio:device4/buffer/length      u:object_r:sysfs_ss_writable:s0
