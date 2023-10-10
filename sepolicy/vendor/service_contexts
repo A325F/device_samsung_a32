@@ -1,1 +1,3 @@
 vendor.samsung.hardware.security.hdcp.wifidisplay.ISehHdcp/default                u:object_r:hal_hdcp_service:s0
+
+vendor.samsung.hardware.hyper.ISehHyPer/default      u:object_r:hal_hyper_service:s0
