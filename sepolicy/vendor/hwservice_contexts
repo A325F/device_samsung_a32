@@ -11,3 +11,5 @@ vendor.samsung.hardware.miscpower::ISehMiscPower                        u:object
 vendor.samsung.hardware.sysinput::ISehSysInputDev                          u:object_r:hal_sec_inputdev_hwservice:s0
 
 vendor.samsung.hardware.thermal::ISehThermal                         u:object_r:hal_thermal_hwservice:s0
+
+vendor.samsung.hardware.wifi::ISehWifi                  u:object_r:hal_wifi_hwservice:s0
