@@ -1,0 +1,1 @@
+allow hal_wifi_supplicant_default hal_wifi_supplicant_hwservice:hwservice_manager { add find };
