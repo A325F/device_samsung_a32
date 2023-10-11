@@ -8,3 +8,4 @@ allow tzdaemon mnt_vendor_file:dir { add_name create open read remove_name rmdir
 allow tzdaemon mnt_vendor_file:file { create getattr open read rename unlink write };
 allow tzdaemon property_socket:sock_file { write };
 allow tzdaemon init:unix_stream_socket connectto;
+allow tzdaemon tz_user_device:chr_file { map ioctl open read };
