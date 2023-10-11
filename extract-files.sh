@@ -58,6 +58,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
+        vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64)
+            "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
