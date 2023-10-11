@@ -28,7 +28,10 @@ genfscon sysfs /power/cpufreq_max_limit     u:object_r:sysfs_power:s0
 # Sensors
 genfscon sysfs /devices/virtual/sec/tsp/cmd     u:object_r:sysfs_sec:s0
 genfscon sysfs /devices/platform/shub/iio:device4/buffer/length      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device5/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device7/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device12/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device16/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device22/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device27/name      u:object_r:sysfs_ss_writable:s0
 
