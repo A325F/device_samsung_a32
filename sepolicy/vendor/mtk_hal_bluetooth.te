@@ -1,1 +1,2 @@
 allow mtk_hal_bluetooth hal_bluetooth_hwservice:hwservice_manager { add find };
+allow mtk_hal_audio hal_audio_hwservice:hwservice_manager { add find };
