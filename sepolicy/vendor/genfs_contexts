@@ -32,13 +32,34 @@ genfscon sysfs /power/cpufreq_max_limit     u:object_r:sysfs_power:s0
 
 # Sensors
 genfscon sysfs /devices/virtual/sec/tsp/cmd     u:object_r:sysfs_sec:s0
+genfscon sysfs /devices/platform/shub/iio:device0/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device2/buffer/length      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device2/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device3/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device4/buffer/length      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device4/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device5/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device6/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device7/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device8/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device9/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device10/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device11/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device12/buffer/length      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device12/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device13/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device15/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device16/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device17/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device18/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device19/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device20/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device21/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device22/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device23/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device25/name      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device27/name      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/iio:device1/name     u:object_r:sysfs_ss_writable:s0
 
 # Thermistor
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature       u:object_r:sysfs_ss_writable:s0
