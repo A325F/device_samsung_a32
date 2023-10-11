@@ -21,5 +21,7 @@ vendor.samsung.hardware.audio::ISehDevicesFactory                              u
 vendor.samsung.hardware.bluetooth::ISehBluetooth      u:object_r:hal_bluetooth_hwservice:s0
 
 vendor.samsung.hardware.radio.channel::ISehChannel          u:object_r:hal_telephony_hwservice:s0
+vendor.samsung.hardware.radio.bridge::ISehBridge            u:object_r:hal_telephony_hwservice:s0
+vendor.samsung.hardware.radio::ISehRadio                    u:object_r:hal_telephony_hwservice:s0
 
 vendor.samsung.hardware.security.vaultkeeper::ISehVaultKeeper     u:object_r:hal_vaultkeeper_server_hwservice:s0
