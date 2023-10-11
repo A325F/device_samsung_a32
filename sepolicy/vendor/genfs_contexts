@@ -18,6 +18,11 @@ genfscon sysfs /devices/platform/10238000.gce/wakeup    u:object_r:sysfs_wakeup:
 genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/otg/wakeup      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/usb1/1-1/wakeup/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0033/wakeup      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-fuelgauge/power_supply/sm5714-fuelgauge/wakeup       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/sm5714-charger/wakeup       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/wakeup    u:object_r:sysfs_wakeup:s0
 
 # Panel
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     u:object_r:sysfs_ski_display_writable:s0
