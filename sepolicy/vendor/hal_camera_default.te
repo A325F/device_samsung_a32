@@ -9,6 +9,7 @@ allow hal_camera_default proc_thermal:dir search;
 allow hal_camera_default vendor_camera_dump_file:dir { add_name create getattr write };
 allow hal_camera_default vendor_camera_dump_file:file { open create getattr write };
 allow hal_camera_default sysfs_boot_mode:file { open read };
+allow hal_camera_default mnt_vendor_file:dir search;
 
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
