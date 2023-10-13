@@ -1,1 +1,4 @@
 dontaudit surfaceflinger vendor_default_prop:file { getattr map open };
+dontaudit system_app system_suspend_control_internal_service:service_manager find;
+dontaudit system_app system_suspend_control_service:service_manager find;
+dontaudit system_app tracingproxy_service:service_manager find;
