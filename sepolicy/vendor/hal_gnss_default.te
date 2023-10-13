@@ -1,2 +1,2 @@
-allow hal_gnss_default hal_gnss_default:unix_dgram_socket sendto;
+allow hal_gnss_default self:unix_dgram_socket sendto;
 allow hal_gnss_default hal_gnss_hwservice:hwservice_manager { add find };

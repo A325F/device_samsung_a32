@@ -1,4 +1,4 @@
-allow hal_camera_default hal_camera_default:capability sys_nice;
+allow hal_camera_default self:capability sys_nice;
 allow hal_camera_default CAM_CAL_DRV_device:chr_file { ioctl open read write };
 allow hal_camera_default camera_isp_device:chr_file { map open read write };
 allow hal_camera_default flashlight_device:chr_file { ioctl open read write };
