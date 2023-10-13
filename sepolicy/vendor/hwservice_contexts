@@ -29,3 +29,5 @@ vendor.samsung.hardware.radio::ISehRadio                    u:object_r:hal_telep
 vendor.samsung.hardware.security.vaultkeeper::ISehVaultKeeper     u:object_r:hal_vaultkeeper_server_hwservice:s0
 
 vendor.mediatek.hardware.meta::IMetaTst     u:object_r:mtk_hal_meta_hwservice:s0
+
+vendor.mediatek.hardware.mtkpower::IMtkPerf  u:object_r:hal_power_hwservice:s0
