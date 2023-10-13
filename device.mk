@@ -56,8 +56,8 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation
 
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.3.vendor
+    android.hardware.soundtrigger@2.0-impl:32 \
+    android.hardware.soundtrigger@2.3.vendor:32
 
 PRODUCT_PACKAGES += \
     MtkInCallService
