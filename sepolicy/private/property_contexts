@@ -18,3 +18,8 @@ service.camera.client               u:object_r:exported_system_prop:s0
 dev.sdhms.thermal.hv					u:object_r:exported_system_prop:s0
 
 ro.product_ship                          u:object_r:product_ship_prop:s0
+
+persist.sys.sec_feature                u:object_r:exported_system_prop:s0
+persist.sys.sec_feature2               u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid                   u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid2                  u:object_r:exported_system_prop:s0
