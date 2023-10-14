@@ -1,4 +1,5 @@
-allow rild tun_device:chr_file { ioctl open read write };
+allow rild tun_device:chr_file rw_file_perms;
+allowxperm rild tun_device:chr_file ioctl { 0x54ca 0x54cb };
 allow rild cassd:dir search;
 allow rild cassd:file { getattr open read };
 allow rild mtk_hal_audio:dir search;
