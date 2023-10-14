@@ -14,6 +14,7 @@ ro.csc.country_code                      u:object_r:csc_prop:s0
 ro.factory.factory_binary                       u:object_r:exported_system_prop:s0
 
 service.camera.client               u:object_r:exported_system_prop:s0
+cam.dipsavefile.enable						u:object_r:sec_camera_prop:s0
 
 dev.sdhms.thermal.hv					u:object_r:exported_system_prop:s0
 

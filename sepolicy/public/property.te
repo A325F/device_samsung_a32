@@ -1,2 +1,3 @@
 type csc_prop, property_type, system_property_type, system_public_property_type;
 type product_ship_prop, property_type, system_property_type, system_public_property_type;
+type sec_camera_prop, property_type, system_property_type, system_public_property_type;
