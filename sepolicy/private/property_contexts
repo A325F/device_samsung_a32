@@ -1,1 +1,3 @@
 ro.build.PDA                        u:object_r:exported_system_prop:s0
+
+ro.csc.countryiso_code                   u:object_r:csc_prop:s0

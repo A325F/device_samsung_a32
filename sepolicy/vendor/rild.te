@@ -14,3 +14,4 @@ allow rild radio_device:chr_file { read write open ioctl };
 allow rild hal_telephony_hwservice:hwservice_manager { add find };
 
 get_prop(rild, vendor_radio_prop)
+get_prop(rild, csc_prop)
