@@ -13,6 +13,9 @@
 # dumpstate
 /(vendor|system/vendor)/bin/hw/android\.hardware\.dumpstate@1\.1-service-lazy      u:object_r:hal_dumpstate_default_exec:s0
 
+# efs
+/mnt/vendor/efs/tee(/.*)?	                         u:object_r:tee_efs_file:s0
+
 # emservice
 /(vendor|system/vendor)/bin/emservice        u:object_r:emservice_exec:s0
 

@@ -4,11 +4,13 @@ type tzdaemon_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(tzdaemon)
 
-allow tzdaemon mnt_vendor_file:dir { add_name create open read remove_name rmdir write };
-allow tzdaemon mnt_vendor_file:file { create getattr open read rename unlink write };
+allow tzdaemon mnt_vendor_file:dir create_dir_perms;
+allow tzdaemon mnt_vendor_file:file create_file_perms;
 allow tzdaemon property_socket:sock_file { write };
 allow tzdaemon init:unix_stream_socket connectto;
 allow tzdaemon tz_user_device:chr_file { map ioctl open read write };
+allow tzdaemon tee_efs_file:dir create_dir_perms;
+allow tzdaemon tee_efs_file:file create_file_perms;
 
 set_prop(tzdaemon, vendor_tzdaemon_prop)
 set_prop(tzdaemon, vendor_secureos_prop)
