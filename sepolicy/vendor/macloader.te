@@ -14,6 +14,7 @@ allow macloader sysfs:file { open read write };
 allow macloader vendor_data_file:file { create open read setattr getattr write };
 allow macloader property_socket:sock_file { write };
 allow macloader self:udp_socket { create ioctl };
+allowxperm macloader self:udp_socket ioctl 0x8914;
 allow macloader init:unix_stream_socket connectto;
 
 set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
