@@ -1,6 +1,15 @@
 ro.build.PDA                        u:object_r:exported_system_prop:s0
 
+mdc.                u:object_r:csc_prop:s0
 ro.csc.countryiso_code                   u:object_r:csc_prop:s0
+ro.csc.sales_code                        u:object_r:csc_prop:s0
+ro.csc.omcnw_code                        u:object_r:csc_prop:s0
+ro.csc.omcnw_code2                       u:object_r:csc_prop:s0
+ril.official_cscver                      u:object_r:csc_prop:s0
+persist.sys.omc_etcpath                  u:object_r:csc_prop:s0
+persist.sys.omc_support                  u:object_r:csc_prop:s0
+ro.simbased.changetype                   u:object_r:csc_prop:s0
+ro.csc.country_code                      u:object_r:csc_prop:s0
 
 ro.factory.factory_binary                       u:object_r:exported_system_prop:s0
 
