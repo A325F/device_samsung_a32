@@ -16,3 +16,5 @@ ro.factory.factory_binary                       u:object_r:exported_system_prop:
 service.camera.client               u:object_r:exported_system_prop:s0
 
 dev.sdhms.thermal.hv					u:object_r:exported_system_prop:s0
+
+ro.product_ship                          u:object_r:product_ship_prop:s0
