@@ -4,14 +4,8 @@ type hal_hdcp_default_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(hal_hdcp_default)
 
+allow hal_hdcp_default hal_hdcp_default_exec:file { read getattr map execute open entrypoint };
 allow hal_hdcp_default hal_hdcp_service:service_manager add;
 
-allow hal_hdcp_client hal_hdcp_service:service_manager find;
-allow hal_hdcp_server hal_hdcp_service:service_manager { add find };
-
-allow hal_hdcp_client hal_hdcp_server:binder { call transfer };
-allow hal_hdcp_client hal_hdcp_server:binder transfer;
-allow hal_hdcp_client hal_hdcp_server:fd use;
-allow hal_hdcp_server hal_hdcp_client:binder { call transfer };
-allow hal_hdcp_server hal_hdcp_client:binder transfer;
-allow hal_hdcp_server hal_hdcp_client:fd use;
+binder_call(hal_hdcp_default, hal_hdcp_service)
+binder_call(hal_hdcp_default, hal_hdcp_hwservice)
