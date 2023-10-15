@@ -10,3 +10,4 @@ allow vendor_secril_config_svc property_socket:sock_file { write };
 allow vendor_secril_config_svc init:unix_stream_socket connectto;
 
 set_prop(vendor_secril_config_svc, vendor_radio_prop)
+get_prop(vendor_secril_config_svc, csc_prop)
