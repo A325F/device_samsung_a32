@@ -8,3 +8,5 @@ allow hal_hyper_default sysfs:file { getattr open read write };
 allow hal_hyper_default cgroup:file getattr;
 
 allow hal_hyper_default hal_hyper_service:service_manager add;
+
+get_prop(hal_hyper_default, product_ship_prop)
