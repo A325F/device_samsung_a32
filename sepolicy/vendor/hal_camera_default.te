@@ -1,6 +1,6 @@
 allow hal_camera_default self:capability sys_nice;
 allow hal_camera_default CAM_CAL_DRV_device:chr_file { ioctl open read write };
-allow hal_camera_default camera_isp_device:chr_file { map open read write };
+allow hal_camera_default camera_isp_device:chr_file { map open read write ioctl };
 allow hal_camera_default flashlight_device:chr_file { ioctl open read write };
 allow hal_camera_default kd_camera_hw_device:chr_file { ioctl open read write };
 allow hal_camera_default mnt_user_file:dir search;
@@ -11,9 +11,34 @@ allow hal_camera_default vendor_camera_dump_file:file create_file_perms;
 allow hal_camera_default sysfs_boot_mode:file { open read };
 allow hal_camera_default mnt_vendor_file:dir create_dir_perms;
 allow hal_camera_default proc_ged:file ioctl;
-allow hal_camera_default proc_meminfo:file { open read };
+allow hal_camera_default proc_meminfo:file { open read getattr };
+allowxperm hal_camera_default proc_ged:file ioctl { 0x6765 0x6766 };
+allow hal_camera_default MAINAF_device:chr_file { ioctl open read };
+allowxperm hal_camera_default MAINAF_device:chr_file ioctl 0x4101;
+allowxperm hal_camera_default camera_isp_device:chr_file ioctl { 0x6b00 0x6b0f 0x6b1a 0x6b2c 0x6b03 0x6b06 0x6b09 0x6b21 0x6b22 0x6b19 0x6b20 0x6b1d 0x6b17 0x6b23 0x6b27 0x6b29 0x6b28 0x6b12 0x6b13 };
+allow hal_camera_default sysfs_ski_memory_writable:dir { ioctl read getattr lock open watch watch_reads search };
+allow hal_camera_default sysfs_ski_memory_writable:file { ioctl read write getattr lock append map open watch watch_reads };
+allow hal_camera_default self:dir { getattr search };
+allow hal_camera_default self:file { getattr ioctl open read };
+allow hal_camera_default camera_fdvt_device:chr_file ioctl;
+allowxperm hal_camera_default camera_fdvt_device:chr_file ioctl { 0x4e01 0x4e02 0x4e03 0x4e04 };
+allow hal_camera_default proc_mtk_jpeg:file { ioctl read open };
+allowxperm hal_camera_default proc_mtk_jpeg:file ioctl { 0x780b 0x780c 0x780d 0x780e 0x780f };
+allow hal_camera_default mtk_cmdq_device:chr_file ioctl;
+allowxperm hal_camera_default mtk_cmdq_device:chr_file ioctl { 0x7814 0x7815 };
+allow hal_camera_default ccu_device:chr_file { ioctl open read write };
+allowxperm hal_camera_default ccu_device:chr_file ioctl { 0x6300 0x6309 0x6301 0x6302 0x630b 0x6313 0x631e };
+allow hal_camera_default MTK_SMI_device:chr_file { ioctl read open };
+allowxperm hal_camera_default MTK_SMI_device:chr_file ioctl { 0x4f18 0x4f58 0x4f59 0x4f1c 0x4f1d };
+allow hal_camera_default hal_graphics_composer_default:fd use;
+allow hal_camera_default sysfs_emi_ctrl_concurrency_scenario:file rw_file_perms;
 
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
 
+allow hal_camera_default system_server:binder { call transfer };
+binder_call(hal_camera_default, mtk_hal_power)
+binder_call(hal_camera_default, hal_graphics_allocator_default)
+
 get_prop(hal_camera_default, sec_camera_prop)
+get_prop(hal_camera_default, vendor_sec_camera_prop)

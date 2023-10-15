@@ -13,6 +13,7 @@ ro.audio.usb.period_us=16000
 
 # Camera
 ro.camera.sound.forced=0
+persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
 
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true

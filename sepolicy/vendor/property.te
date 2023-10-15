@@ -6,3 +6,4 @@ type vendor_secureos_prop, property_type, vendor_property_type, vendor_public_pr
 type vendor_sec_vaultkeeper_prop, property_type, vendor_property_type, vendor_public_property_type;
 
 type sns_camera_light_prop, property_type, system_property_type, system_public_property_type;
+type vendor_sec_camera_prop, property_type, vendor_property_type, vendor_public_property_type;

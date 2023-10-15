@@ -10,6 +10,9 @@ genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect u:object_r:sysfs_sec:s0
 # Input
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enable     u:object_r:sysfs_ss_writable:s0
 
+# Kernel
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode       u:object_r:sysfs_ski_memory_writable:s0
+
 # Label wakeup nodes
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup/wakeup               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:hall_ic/wakeup     u:object_r:sysfs_wakeup:s0
