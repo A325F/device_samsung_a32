@@ -15,3 +15,5 @@ allow hal_camera_default proc_meminfo:file { open read };
 
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
+
+get_prop(hal_camera_default, sec_camera_prop)
