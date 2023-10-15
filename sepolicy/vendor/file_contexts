@@ -52,6 +52,7 @@
 # partitions
 /dev/block/mmcblk0p1                u:object_r:efsblk_device:s0
 /dev/block/mmcblk0p3                u:object_r:steady_block_device:s0
+/dev/block/platform/.+/by-name/(steady|STEADY)?                       u:object_r:steady_block_device:s0
 
 # proca
 /(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.proca@2\.0-service    u:object_r:hal_proca_default_exec:s0

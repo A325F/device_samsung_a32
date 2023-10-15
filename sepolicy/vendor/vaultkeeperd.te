@@ -13,7 +13,9 @@ allow vaultkeeperd socket_device:sock_file { create setattr };
 allow vaultkeeperd init:unix_stream_socket connectto;
 allow vaultkeeperd self:unix_stream_socket connectto;
 allow vaultkeeperd tz_user_device:chr_file { open read write ioctl map };
-allow vaultkeeperd steady_block_device:blk_file { ioctl open read write };
+allow vaultkeeperd steady_block_device:blk_file rw_file_perms;
+allow vaultkeeperd block_device:dir search;
+allow vaultkeeperd steady_block_device:dir search;
 
 set_prop(vaultkeeperd, vendor_sec_vaultkeeper_prop)
 get_prop(vaultkeeperd, vendor_tztsdaemon_prop)
