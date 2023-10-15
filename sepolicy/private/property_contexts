@@ -28,3 +28,7 @@ persist.sys.sec_feature                u:object_r:exported_system_prop:s0
 persist.sys.sec_feature2               u:object_r:exported_system_prop:s0
 persist.sys.sec_pcid                   u:object_r:exported_system_prop:s0
 persist.sys.sec_pcid2                  u:object_r:exported_system_prop:s0
+
+persist.cache_status_64         u:object_r:cache_status_prop:s0
+
+persist.debug_snap_gpu            u:object_r:vendor_debug_snap_prop:s0

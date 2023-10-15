@@ -25,6 +25,9 @@
 # gnss
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service            u:object_r:hal_gnss_default_exec:s0
 
+# gpu
+/dev/mali[0-9]          u:object_r:gpu_device:s0
+
 # hdcp
 /vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay-service    u:object_r:hal_hdcp_default_exec:s0
 

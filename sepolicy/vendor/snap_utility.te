@@ -3,3 +3,17 @@ type snap_utility, domain;
 type snap_utility_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(snap_utility)
+
+allow snap_utility property_socket:sock_file write;
+allow snap_utility vendor_data_file:dir create_dir_perms;
+allow snap_utility vendor_data_file:file create_file_perms;
+allow snap_utility init:unix_stream_socket connectto;
+allow snap_utility system_data_file:dir search;
+allow snap_utility vendor_toolbox_exec:file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans };
+allow snap_utility vendor_shell_exec:file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans };
+allow snap_utility gpu_device:chr_file rw_file_perms;
+
+get_prop(snap_utility, cache_status_prop)
+set_prop(snap_utility, cache_status_prop)
+get_prop(snap_utility, system_boot_reason_prop)
+get_prop(snap_utility, vendor_debug_snap_prop)
