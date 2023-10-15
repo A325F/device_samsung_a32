@@ -9,7 +9,7 @@ allow hal_camera_default proc_thermal:dir search;
 allow hal_camera_default vendor_camera_dump_file:dir create_dir_perms;
 allow hal_camera_default vendor_camera_dump_file:file create_file_perms;
 allow hal_camera_default sysfs_boot_mode:file { open read };
-allow hal_camera_default mnt_vendor_file:dir search;
+allow hal_camera_default mnt_vendor_file:dir create_dir_perms;
 allow hal_camera_default proc_ged:file ioctl;
 allow hal_camera_default proc_meminfo:file { open read };
 

@@ -1,1 +1,1 @@
-allow vold mnt_vendor_file:dir { open read ioctl };
+allow vold mnt_vendor_file:dir create_dir_perms;

@@ -6,8 +6,8 @@ init_daemon_domain(hal_sec_inputdev_default)
 
 allow hal_sec_inputdev_default input_device:chr_file { ioctl open read write };
 allow hal_sec_inputdev_default input_device:dir { open read write };
-allow hal_sec_inputdev_default mnt_vendor_file:file { open read write };
-allow hal_sec_inputdev_default mnt_vendor_file:dir search;
+allow hal_sec_inputdev_default mnt_vendor_file:file create_file_perms;
+allow hal_sec_inputdev_default mnt_vendor_file:dir create_dir_perms;
 
 allow hal_sec_inputdev_default hal_sec_inputdev_hwservice:hwservice_manager { add find };
 allow hal_sec_inputdev_default hidl_base_hwservice:hwservice_manager add;
