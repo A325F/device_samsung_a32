@@ -69,6 +69,7 @@
 
 # sysinput
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service                      u:object_r:hal_sec_inputdev_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.secinputdev@1\.0-service                      u:object_r:hal_sec_inputdev_default_exec:s0
 
 # thermal
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                 u:object_r:hal_thermal_default_exec:s0

@@ -5,7 +5,7 @@ type hal_sec_inputdev_default_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(hal_sec_inputdev_default)
 
 allow hal_sec_inputdev_default input_device:chr_file { ioctl open read write };
-allow hal_sec_inputdev_default input_device:dir { open read write };
+allow hal_sec_inputdev_default input_device:dir create_dir_perms;
 allow hal_sec_inputdev_default mnt_vendor_file:file create_file_perms;
 allow hal_sec_inputdev_default mnt_vendor_file:dir create_dir_perms;
 
