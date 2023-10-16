@@ -1324,12 +1324,35 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuropilot_hal_utils.so
 
 # NFC
+etc/init/init.nfc.samsung.rc
+etc/permissions/com.publicnfc.xml
+etc/permissions/com.samsung.android.nfc.mpos.xml
+etc/permissions/com.samsung.android.nfc.rfcontrol.xml
+etc/permissions/com.samsung.android.nfc.t4t.xml
+etc/permissions/com.samsung.android.nfc.t4temul.xml
+etc/permissions/com.sec.feature.nfc_authentication_cover.xml
+etc/libnfc-nci.conf
+etc/nfc_key
+-framework/com.publicnfc.jar
+-framework/com.samsung.android.nfc.mpos.jar
+-framework/com.samsung.android.nfc.rfcontrol.jar
+-framework/com.samsung.android.nfc.t4t.jar
+lib64/android.hardware.nfc-V1-ndk.so
+lib64/android.hardware.nfc@1.0.so
+lib64/android.hardware.nfc@1.1.so
+lib64/android.hardware.nfc@1.2.so
+lib64/libnfc-sec.so
+lib64/libnfc_sec_jni.so
+lib64/vendor.samsung.hardware.nfc@2.0.so
 vendor/bin/hw/sec.android.hardware.nfc@1.2-service
 vendor/etc/init/init.nfc.samsung.rc
 vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
+vendor/lib64/android.hardware.nfc@1.0.so
+vendor/lib64/android.hardware.nfc@1.1.so
+vendor/lib64/android.hardware.nfc@1.2.so
 vendor/lib64/nfc_nci_sec.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 

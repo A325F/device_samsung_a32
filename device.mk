@@ -236,10 +236,14 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
-    com.android.nfc_extras \
     NfcNci \
     Tag
+
+PRODUCT_BOOT_JARS += \
+    com.publicnfc \
+    com.samsung.android.nfc.mpos \
+    com.samsung.android.nfc.rfcontrol \
+    com.samsung.android.nfc.t4t
 
 # Media
 PRODUCT_COPY_FILES += \
