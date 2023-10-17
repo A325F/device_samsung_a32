@@ -14,6 +14,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from a32 device
 $(call inherit-product, device/samsung/a32/device.mk)
 
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+
 PRODUCT_DEVICE := a32
 PRODUCT_NAME := lineage_a32
 PRODUCT_BRAND := samsung
