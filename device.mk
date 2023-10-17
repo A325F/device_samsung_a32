@@ -299,6 +299,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayA32 \
     FrameworksResOverlayA32 \
     SettingsOverlayA32 \
+    SystemUIOverlayA32 \
     TetheringConfigOverlayA32 \
     WifiOverlayA32
 
