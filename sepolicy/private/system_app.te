@@ -1,2 +1,2 @@
 allow system_app proc_pagetypeinfo:file { open read getattr };
-allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:dir { open read search };
