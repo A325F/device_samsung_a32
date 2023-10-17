@@ -6,6 +6,7 @@ vendor.samsung.hardware.gnss::ISehGnss                                 u:object_
 
 vendor.nxp.nxpnfc::INxpNfc  u:object_r:hal_nfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse  u:object_r:hal_nfc_hwservice:s0
+vendor.samsung.hardware.nfc::ISehNfc           u:object_r:hal_nfc_hwservice:s0
 
 vendor.samsung.hardware.miscpower::ISehMiscPower                        u:object_r:hal_miscpower_hwservice:s0
 

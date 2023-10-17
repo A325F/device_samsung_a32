@@ -1,0 +1,2 @@
+allow nfc nfc_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
+allow nfc hal_nfc_hwservice:hwservice_manager find;

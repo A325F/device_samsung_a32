@@ -9,6 +9,8 @@ allow init self:netlink_generic_socket { bind create getattr read setopt write }
 allow init self:udp_socket ioctl;
 allow init self:unix_stream_socket connectto;
 allow init sysfs_ski_display_writable:file { open write };
+allow init nfc_device:chr_file ioctl;
+allowxperm init nfc_device:chr_file ioctl { 0x5302 0x5303 };
 
 get_prop(init, vts_status_prop)
 set_prop(init, apexd_prop)
