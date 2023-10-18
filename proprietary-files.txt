@@ -1183,6 +1183,34 @@ vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
 vendor/etc/locale/plmn_delta_zh-rTW.bin
 
+# LPM
+bin/charger
+bin/lpm
+etc/init/init.sec-charger.rc
+lib64/libmaet.so
+lib64/libshowlogo.so
+lib64/libsxqk_skia.so
+media/battery_error.spi
+media/battery_lightning.spi
+media/battery_lightning_fast.spi
+media/battery_low.spi
+media/battery_temperature_error.spi
+media/battery_temperature_limit.spi
+media/battery_water_usb.spi
+media/charging_vi_100.spi
+media/charging_vi_level1.spi
+media/charging_vi_level2.spi
+media/charging_vi_level3.spi
+media/charging_vi_level4.spi
+media/dock_error_usb.spi
+media/incomplete_connect.spi
+media/lcd_density.txt
+media/percentage.spi
+media/safety_timer_usb.spi
+media/slow_charging_usb.spi
+media/temperature_limit_usb.spi
+media/water_protection_usb.spi
+
 # Media
 lib/libdatasource_local_cache.so
 lib/libhdcp2.so

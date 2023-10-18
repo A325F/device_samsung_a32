@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Codec2
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
