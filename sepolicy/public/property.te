@@ -4,3 +4,5 @@ type sec_camera_prop, property_type, system_property_type, system_public_propert
 type sec_camera_portrait_prop, property_type, system_property_type, system_public_property_type;
 type cache_status_prop, property_type, system_property_type, system_public_property_type;
 type vendor_debug_snap_prop, property_type, system_property_type, system_public_property_type;
+
+vendor_restricted_prop(vendor_exported_system_prop);

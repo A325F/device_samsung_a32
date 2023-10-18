@@ -5,3 +5,4 @@ allow mtk_hal_audio rild:unix_stream_socket connectto;
 allow mtk_hal_audio hal_audio_hwservice:hwservice_manager { add find };
 
 get_prop(mtk_hal_audio, csc_prop)
+get_prop(mtk_hal_audio, vendor_exported_system_prop)
