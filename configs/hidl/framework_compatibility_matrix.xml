@@ -422,6 +422,9 @@
         <name>vendor.samsung.hardware.sysinput</name>
         <version>1.0-3</version>
         <interface>
+            <name>ISehSysInputCallback</name>
+        </interface>
+        <interface>
             <name>ISehSysInputDev</name>
             <instance>default</instance>
         </interface>

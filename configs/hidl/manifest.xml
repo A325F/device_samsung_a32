@@ -257,6 +257,14 @@
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>
         <transport>hwbinder</transport>
+        <version>1.3</version>
+        <interface>
+            <name>ISehSysInputCallback</name>
+        </interface>
+        <interface>
+            <name>ISehSysInputDev</name>
+            <instance>default</instance>
+        </interface>
         <fqname>@1.3::ISehSysInputDev/default</fqname>
     </hal>
     <hal format="hidl">
