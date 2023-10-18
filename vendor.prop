@@ -290,6 +290,21 @@ debug.sf.disable_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.sf.duration=27600000
+debug.sf.late.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.early.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
+debug.sf.hwc.min.duration=23000000
+debug.sf.high_fps.late.sf.duration=8300000
+debug.sf.high_fps.late.app.duration=10000000
+debug.sf.high_fps.early.sf.duration=8300000
+debug.sf.high_fps.early.app.duration=10000000
+debug.sf.high_fps.earlyGl.sf.duration=8300000
+debug.sf.high_fps.earlyGl.app.duration=10000000
+debug.sf.high_fps.hwc.min.duration=7500000
 
 # TEE
 ro.vendor.mtk_tee_gp_support=1
