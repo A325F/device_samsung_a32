@@ -100,12 +100,6 @@ vendor.rild.libpath=mtk-ril.so
 ro.product_ship=true
 ro.vendor.mtk_omacp_support=1
 
-# SurfaceFlinger
-debug.sf.enable_transaction_tracing=false
-debug.sf.latch_unsignaled=true
-debug.sf.predict_hwc_composition_strategy=0
-ro.surface_flinger.has_HDR_display=false
-
 # Telephony
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.mtk_telephony_add_on_policy=0
