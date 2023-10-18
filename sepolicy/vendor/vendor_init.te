@@ -1,5 +1,6 @@
 allow vendor_init cgroup:file getattr;
 allow vendor_init proc:file write;
+allow vendor_init unlabeled:dir { add_name write };
 
 get_prop(vendor_init, vts_status_prop)
 get_prop(vendor_init, vendor_radio_prop)
