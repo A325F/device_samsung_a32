@@ -13,7 +13,7 @@ allow hal_camera_default mnt_vendor_file:dir create_dir_perms;
 allow hal_camera_default proc_ged:file ioctl;
 allow hal_camera_default proc_meminfo:file { open read getattr };
 allowxperm hal_camera_default proc_ged:file ioctl { 0x6765 0x6766 };
-allow hal_camera_default MAINAF_device:chr_file { ioctl open read };
+allow hal_camera_default MAINAF_device:chr_file { ioctl open read write };
 allowxperm hal_camera_default MAINAF_device:chr_file ioctl 0x4101;
 allowxperm hal_camera_default camera_isp_device:chr_file ioctl { 0x6b00 0x6b0f 0x6b1a 0x6b2c 0x6b03 0x6b06 0x6b09 0x6b21 0x6b22 0x6b19 0x6b20 0x6b1d 0x6b17 0x6b23 0x6b27 0x6b29 0x6b28 0x6b12 0x6b13 };
 allow hal_camera_default sysfs_ski_memory_writable:dir { ioctl read getattr lock open watch watch_reads search };
