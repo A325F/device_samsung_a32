@@ -18,6 +18,9 @@ vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 vendor/lib64/libudf.so
 
+# APN
+etc/apns-conf.xml
+
 # APU
 vendor/lib/libapu_mdw.so
 vendor/lib/libapusys.so
