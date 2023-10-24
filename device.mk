@@ -374,6 +374,10 @@ PRODUCT_CHARACTERISTICS := default
 
 include $(LOCAL_PATH)/configs/log/vendor_logtag.mk
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0.vendor \
