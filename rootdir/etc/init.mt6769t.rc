@@ -65,6 +65,11 @@ on init
     chown system system /dev/cpuset/cgroup.procs
     chmod 0664 /dev/cpuset/tasks
 
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 on late-init
     write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
@@ -189,6 +194,11 @@ on post-fs
 
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
+
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
@@ -1200,6 +1210,11 @@ on post-fs-data
 # End of adding by MTK drivers
 # -----------------------
 
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 on zygote-start
     write /proc/bootprof "INIT:zygote-start"
 
@@ -1608,3 +1623,36 @@ service pageboostd /system/bin/pageboostd
     group system mount radio net_bt sdcard_rw shell media media_rw
     socket pageboostd seqpacket 0660 system system
     disabled
+
+    # Logger
+service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on early-boot
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
+#on property:sys.boot_completed=1
+# Stop the logger service
+#    stop boot_log
+#    stop boot_log_crash
+#    stop boot_log_kernel
