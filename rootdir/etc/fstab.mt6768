@@ -6,21 +6,21 @@
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6768/fstab.in.mt6768" 2
 # 148 "vendor/mediatek/proprietary/hardware/fstab/mt6768/fstab.in.mt6768"
-system /system ext4 ro wait,,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey:/avb/t-developer-gsi.avbpubkey
+system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey:/avb/t-developer-gsi.avbpubkey
 
-vendor /vendor ext4 ro wait,,avb,logical,first_stage_mount
-
-
-product /product ext4 ro wait,,avb,logical,first_stage_mount
+vendor /vendor ext4 ro wait,avb,logical,first_stage_mount
 
 
-odm /odm ext4 ro wait,,avb,logical,first_stage_mount
+product /product ext4 ro wait,avb,logical,first_stage_mount
+
+
+odm /odm ext4 ro wait,avb,logical,first_stage_mount
 
 
 
 /dev/block/platform/bootdevice/by-name/md_udc	/metadata	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync	wait,check,formattable,first_stage_mount
 
-/dev/block/platform/bootdevice/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678,inlinecrypt	wait,check,,quota,latemount,,reservedsize=128M,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption,fscompress
+/dev/block/platform/bootdevice/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678,inlinecrypt	wait,check,quota,latemount,reservedsize=128M,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption,fscompress
 
 /dev/block/platform/bootdevice/by-name/cache	/cache	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
 
@@ -65,7 +65,7 @@ odm /odm ext4 ro wait,,avb,logical,first_stage_mount
 
 
 /dev/block/platform/bootdevice/by-name/vbmeta_vendor /vbmeta_vendor emmc defaults first_stage_mount,nofail,
-/dev/block/platform/bootdevice/by-name/vbmeta_system /vbmeta_system emmc defaults first_stage_mount,nofail,,avb=vbmeta
+/dev/block/platform/bootdevice/by-name/vbmeta_system /vbmeta_system emmc defaults first_stage_mount,nofail,avb=vbmeta
 
 /dev/block/platform/bootdevice/by-name/logo /logo emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/expdb /expdb emmc defaults defaults
