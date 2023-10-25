@@ -5,18 +5,6 @@
 //
 
 // Init scripts
-sh_binary {
-    name: "hdm_status.sh",
-    src: "bin/hdm_status.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.insmod.sh",
-    src: "bin/init.insmod.sh",
-    vendor: true,
-}
-
 // Init configuration files
 prebuilt_etc {
     name: "fstab.enableswap",

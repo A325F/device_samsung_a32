@@ -411,10 +411,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    hdm_status.sh \
-    init.insmod.sh
-
-PRODUCT_PACKAGES += \
     fstab.enableswap \
     fstab.mt6768 \
     fstab.mt6769t \
