@@ -361,6 +361,13 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek \
+    libmtkperf_client_vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor    
+
 # PowerOffAlarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm
