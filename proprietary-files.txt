@@ -1358,7 +1358,6 @@ etc/permissions/com.samsung.android.nfc.rfcontrol.xml
 etc/permissions/com.samsung.android.nfc.t4t.xml
 etc/permissions/com.samsung.android.nfc.t4temul.xml
 etc/permissions/com.sec.feature.nfc_authentication_cover.xml
-etc/libnfc-nci.conf
 etc/nfc_key
 -framework/com.publicnfc.jar
 -framework/com.samsung.android.nfc.mpos.jar
