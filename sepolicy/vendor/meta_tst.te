@@ -1,2 +1,0 @@
-allow meta_tst mtk_hal_meta_hwservice:hwservice_manager { add find };
-allow meta_tst hidl_base_hwservice:hwservice_manager add;

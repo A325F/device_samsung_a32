@@ -1765,7 +1765,6 @@ vendor/bin/jpegtool
 vendor/bin/loghidlvendorservice
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
-vendor/bin/meta_tst
 vendor/bin/mrdump_tool
 vendor/bin/mt6660_calibration
 vendor/bin/mtk_pkm_service
