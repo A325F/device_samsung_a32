@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 The Proton AOSP Project
+Licensed SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Disable UI touch sounds by default -->
+    <bool name="def_sound_effects_enabled">false</bool>
+
+    <!-- Set Window animation scale to 50% by default -->
+    <fraction name="def_window_animation_scale">50%</fraction>
+
+    <!-- Set Window transition scale to 50% by default -->
+    <fraction name="def_window_transition_scale">50%</fraction>
+
+</resources>

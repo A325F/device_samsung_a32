@@ -20,7 +20,4 @@ Licensed SPDX-License-Identifier: Apache-2.0
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
-    <!-- Disable UI touch sounds by default -->
-    <bool name="def_sound_effects_enabled">false</bool>
-
 </resources>
