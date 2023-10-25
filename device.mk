@@ -216,6 +216,10 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0.vendor:64
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
