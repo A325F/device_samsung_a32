@@ -1565,7 +1565,6 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.sensorhub.so
