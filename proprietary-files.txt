@@ -918,8 +918,6 @@ vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy
 vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
-vendor/lib64/android.hardware.dumpstate@1.0.so
-vendor/lib64/android.hardware.dumpstate@1.1.so
 
 # Fingerprint
 vendor/lib/libbauthserver.so

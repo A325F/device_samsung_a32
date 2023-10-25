@@ -155,6 +155,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor
 
+# Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.0.vendor:64 \
+    android.hardware.dumpstate@1.1.vendor:64
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
