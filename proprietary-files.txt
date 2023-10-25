@@ -1814,7 +1814,6 @@ vendor/etc/hqm_device.xml
 vendor/etc/mercury.json
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtu-conf.xml
-vendor/etc/partition_permission.sh
 vendor/etc/pdpcnt-conf.xml
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
@@ -1824,7 +1823,6 @@ vendor/etc/plmn_se13.bin
 vendor/etc/public.libraries.txt
 vendor/etc/somxreg.conf
 vendor/etc/task_profiles.json
-vendor/etc/throttle.sh
 vendor/etc/vramdiskd.xml
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libMcClient.so
