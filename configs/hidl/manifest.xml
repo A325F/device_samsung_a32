@@ -206,6 +206,11 @@
         <fqname>@1.0::INxpNfc/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.samsung.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@3.0::ISehBiometricsFingerprint/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ISehBluetooth/default</fqname>

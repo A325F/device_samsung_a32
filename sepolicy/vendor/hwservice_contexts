@@ -35,3 +35,5 @@ vendor.mediatek.hardware.meta::IMetaTst     u:object_r:mtk_hal_meta_hwservice:s0
 vendor.mediatek.hardware.mtkpower::IMtkPerf  u:object_r:hal_power_hwservice:s0
 
 vendor.samsung.hardware.security.hdcp.wifidisplay::ISehHdcp			       	u:object_r:hal_hdcp_hwservice:s0
+
+vendor.samsung.hardware.biometrics.fingerprint::ISehBiometricsFingerprint  u:object_r:hal_fingerprint_hwservice:s0

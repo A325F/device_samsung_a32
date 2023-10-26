@@ -22,6 +22,9 @@
 # engmode
 /(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.engmode@1\.0-service       u:object_r:hal_engmode_default_exec:s0
 
+# fingerprint
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.biometrics\.fingerprint@3\.0-service  u:object_r:hal_fingerprint_default_exec:s0
+
 # gnss
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service            u:object_r:hal_gnss_default_exec:s0
 

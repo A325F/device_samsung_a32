@@ -935,6 +935,15 @@ vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/libteecl.so
 
+# Fingerprint (Samsung)
+vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
+vendor/etc/init/fingerprint_common.rc
+vendor/etc/init/init.fingerprint.rc
+vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/lib/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
+
 # Firmware
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 vendor/firmware/BT_FW.cfg
@@ -1768,10 +1777,8 @@ vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
 vendor/etc/init/dsmsca.rc
 vendor/etc/init/emservice.rc
-vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.connfem.rc
-vendor/etc/init/init.fingerprint.rc
 vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.gps_drv.rc
