@@ -4,3 +4,4 @@ type drb_device, dev_type;
 type io_device, dev_type;
 type steady_block_device, dev_type;
 type efsblk_device, dev_type;
+type fp_sensor_device, dev_type;

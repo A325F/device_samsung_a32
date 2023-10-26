@@ -23,6 +23,7 @@
 /(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.engmode@1\.0-service       u:object_r:hal_engmode_default_exec:s0
 
 # fingerprint
+/dev/esfp[0-9]          u:object_r:fp_sensor_device:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.biometrics\.fingerprint@3\.0-service  u:object_r:hal_fingerprint_default_exec:s0
 
 # gnss

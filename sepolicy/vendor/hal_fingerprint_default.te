@@ -1,0 +1,4 @@
+allow hal_fingerprint_default fp_sensor_device:chr_file rw_file_perms;
+allow hal_fingerprint_default tz_user_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_data_file:dir { add_name create open read remove_name rmdir write };
+allow hal_fingerprint_default vendor_data_file:file create_file_perms;
