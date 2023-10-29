@@ -9,6 +9,7 @@ allow hal_sensors_default io_device:chr_file { open read ioctl };
 allow hal_sensors_default sysfs_sec:file { getattr open write };
 allow hal_sensors_default sysfs_ss_writable:dir search;
 allow hal_sensors_default sysfs_ss_writable:file { getattr open read write };
+allow hal_sensors_default sysfs_ski_display_writable:file { open read };
 
 set_prop(hal_sensors_default, sns_camera_light_prop)
 get_prop(hal_sensors_default, csc_prop)

@@ -29,6 +29,7 @@ genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/wakeup    u:object_r
 
 # Panel
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     u:object_r:sysfs_ski_display_writable:s0
+genfscon sysfs /devices/platform/panel/panel_drv/lcd/panel/lcd_type     u:object_r:sysfs_ski_display_writable:s0
 
 # Power
 genfscon sysfs /power/cpufreq_max_limit     u:object_r:sysfs_power:s0
