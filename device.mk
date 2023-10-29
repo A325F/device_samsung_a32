@@ -69,21 +69,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects_spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_spatializer.xml \
     $(LOCAL_PATH)/configs/audio/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_sec.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     $(LOCAL_PATH)/configs/audio/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     $(LOCAL_PATH)/configs/audio/tms_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tms_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
+    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -94,13 +92,13 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor
 
-# CAS
-PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
-
 # Camera
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
+
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
 
 # Codec2
 PRODUCT_PACKAGES += \
@@ -227,37 +225,11 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
     android.hardware.media.omx@1.0-service
 
-# Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0.vendor \
-    android.hardware.neuralnetworks@1.1.vendor \
-    android.hardware.neuralnetworks@1.2.vendor \
-    android.hardware.neuralnetworks@1.3.vendor
-
-PRODUCT_PACKAGES += \
-    libtextclassifier_hash.vendor
-
-# NFC
-PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag
-
-PRODUCT_BOOT_JARS += \
-    com.publicnfc \
-    com.samsung.android.nfc.mpos \
-    com.samsung.android.nfc.rfcontrol \
-    com.samsung.android.nfc.t4t
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
-
-# Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2_sec_ape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_ape.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2_sec_qcp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_qcp.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -287,6 +259,30 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor
+
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag
+
+PRODUCT_BOOT_JARS += \
+    com.publicnfc \
+    com.samsung.android.nfc.mpos \
+    com.samsung.android.nfc.rfcontrol \
+    com.samsung.android.nfc.t4t
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
 
 # OMX
 PRODUCT_PACKAGES += \
