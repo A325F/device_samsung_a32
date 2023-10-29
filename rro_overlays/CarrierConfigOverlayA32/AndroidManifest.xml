@@ -9,6 +9,7 @@
     <application android:hasCode="false" />
     <overlay
       android:targetPackage="com.android.carrierconfig"
+      android:targetName="CarrierConfig"
       android:isStatic="true"
-      android:priority="750"/>
+      android:priority="0"/>
 </manifest>
