@@ -13,4 +13,11 @@ Licensed SPDX-License-Identifier: Apache-2.0
     <!-- Doze: should notifications be used as a pulse signal? -->
     <bool name="doze_pulse_on_notifications">true</bool>
 
+    <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
+         keyguardMaxRefreshRate. -->
+    <integer name="config_keyguardRefreshRate">60</integer>
+
+    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
+    <integer name="config_keyguardMaxRefreshRate">60</integer>
+
 </resources>

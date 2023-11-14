@@ -79,6 +79,12 @@ drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.widevine_wrapped_keybox_path=/mnt/vendor/efs
 
+# Display - Dynamic refresh rate
+ro.surface_flinger.set_touch_timer_ms=3000
+ro.surface_flinger.set_idle_timer_ms=3000
+ro.surface_flinger.set_display_power_timer_ms=1200
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631
 ro.vendor.fm.platform=mt6631
