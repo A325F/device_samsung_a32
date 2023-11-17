@@ -1432,6 +1432,12 @@ vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 
 # Radio
+lib/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+lib/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/hw/rild
