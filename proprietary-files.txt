@@ -1515,6 +1515,7 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-ims-base.jar
+-priv-app/imsservice/imsservice.apk
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 
 # SAIV

@@ -202,6 +202,9 @@ PRODUCT_BOOT_JARS += \
     mediatek-framework \
     mediatek-ims-base
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service \
@@ -303,6 +306,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayA32 \
     SettingsProviderOverlayA32 \
     SystemUIOverlayA32 \
+    TelephonyOverlayA32 \
     TetheringConfigOverlayA32 \
     WifiOverlayA32
 
