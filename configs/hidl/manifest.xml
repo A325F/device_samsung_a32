@@ -143,6 +143,11 @@
         <fqname>IVibrator/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.wifi</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.5::IWifi/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.wifi.hostapd</name>
         <transport>hwbinder</transport>
         <fqname>@1.3::IHostapd/default</fqname>

@@ -1670,6 +1670,7 @@ vendor/lib64/hw/vibrator.mt6768.so
 vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk_platform.so
 
 # Wi-Fi
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/hw/hostapd
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
@@ -1680,6 +1681,7 @@ vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/init/hostapd.android.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
