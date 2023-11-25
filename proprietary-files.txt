@@ -30,9 +30,7 @@ vendor/lib64/libapusys.so
 vendor/lib64/libapusys_edma.so
 
 # Audio
-vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/audiocmdservice_atci
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
