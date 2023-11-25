@@ -464,6 +464,8 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Bluetooth (A2DP)
+lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
