@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0.vendor \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0-enums.vendor \
-    android.hardware.audio.common@7.0.vendor \
     android.hardware.audio.common@7.0-util.vendor \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.effect@2.0.vendor \
@@ -29,7 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0.vendor \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@6.0-util.vendor \
-    android.hardware.audio.effect@7.0.vendor \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.effect@7.0-util.vendor \
     android.hardware.audio.service.mediatek \
