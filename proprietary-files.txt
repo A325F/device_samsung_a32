@@ -521,9 +521,6 @@ vendor/lib/hw/camera.unihal.default.so
 vendor/lib/mt6768/libdpframework.so
 vendor/lib/mt6768/libmtk_drvb.so
 vendor/lib/mt6768/libpq_prot.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
 vendor/lib/gc02m1_mipi_raw_tuning.so
 vendor/lib/gc02m1b_mipi_raw_tuning.so
 vendor/lib/gc5035_mipi_raw_tuning.so
@@ -543,7 +540,6 @@ vendor/lib/libLocalTM_wrapper.camera.samsung.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libbwc.so
 vendor/lib/libcam.halsensor.hwintegration.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libdpframework.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libface_landmark.arcsoft.so
@@ -583,11 +579,6 @@ vendor/lib64/mt6768/libdpframework.so
 vendor/lib64/mt6768/libmtk_drvb.so
 vendor/lib64/mt6768/libpq_prot.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/gc02m1_mipi_raw_IdxMgr.so
 vendor/lib64/gc02m1_mipi_raw_tuning.so
 vendor/lib64/gc02m1b_mipi_raw_IdxMgr.so
@@ -674,7 +665,6 @@ vendor/lib64/libcamdrv_imem.so
 vendor/lib64/libcamdrv_isp.so
 vendor/lib64/libcamdrv_tuning_mgr.so
 vendor/lib64/libcamdrv_twin.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcameracustom.eis.so
 vendor/lib64/libcameracustom.plugin.so
 vendor/lib64/libcameracustom.so
@@ -794,6 +784,46 @@ vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
+
+# Camera samsung
+vendor/lib/android.frameworks.cameraservice.common@2.0.so
+vendor/lib/android.frameworks.cameraservice.device@2.0.so
+vendor/lib/android.frameworks.cameraservice.device@2.1.so
+vendor/lib/android.frameworks.cameraservice.service@2.0.so
+vendor/lib/android.frameworks.cameraservice.service@2.1.so
+vendor/lib/android.frameworks.cameraservice.service@2.2.so
+vendor/lib/android.hardware.camera.common@1.0.so
+vendor/lib/android.hardware.camera.device@1.0.so
+vendor/lib/android.hardware.camera.device@3.2.so
+vendor/lib/android.hardware.camera.device@3.3.so
+vendor/lib/android.hardware.camera.device@3.4.so
+vendor/lib/android.hardware.camera.provider@2.4.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/libcamera2ndk_vendor.so
+vendor/lib64/android.frameworks.cameraservice.common@2.0.so
+vendor/lib64/android.frameworks.cameraservice.device@2.0.so
+vendor/lib64/android.frameworks.cameraservice.device@2.1.so
+vendor/lib64/android.frameworks.cameraservice.service@2.0.so
+vendor/lib64/android.frameworks.cameraservice.service@2.1.so
+vendor/lib64/android.frameworks.cameraservice.service@2.2.so
+vendor/lib64/android.hardware.camera.common@1.0.so
+vendor/lib64/android.hardware.camera.device@1.0.so
+vendor/lib64/android.hardware.camera.device@3.2.so
+vendor/lib64/android.hardware.camera.device@3.3.so
+vendor/lib64/android.hardware.camera.device@3.4.so
+vendor/lib64/android.hardware.camera.device@3.5.so
+vendor/lib64/android.hardware.camera.device@3.6.so
+vendor/lib64/android.hardware.camera.provider@2.4.so
+vendor/lib64/android.hardware.camera.provider@2.5.so
+vendor/lib64/android.hardware.camera.provider@2.6.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/libcamera2ndk_vendor.so
 
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service-lazy
