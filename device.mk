@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \

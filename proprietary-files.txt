@@ -927,7 +927,6 @@ vendor/lib64/libengmode_tlc.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
 
 # Fingerprint
-vendor/lib/hw/fingerprint.default.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
