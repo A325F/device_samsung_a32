@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     audio.bluetooth.default
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \

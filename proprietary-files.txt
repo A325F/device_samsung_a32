@@ -825,11 +825,6 @@ vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/libcamera2ndk_vendor.so
 
-# CAS
-vendor/bin/hw/android.hardware.cas@1.2-service-lazy
-vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
-
 # Display
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
