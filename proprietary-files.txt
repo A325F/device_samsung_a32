@@ -1198,10 +1198,8 @@ vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 # Media
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libFrucSSMLib.so
@@ -1210,6 +1208,7 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
+vendor/lib/libcodec2_hidl@1.0.so
 vendor/lib/libcodec2_hidl@1.1.so
 vendor/lib/libcodec2_hidl@1.2.so
 vendor/lib/libcodec2_hidl_plugin.so
@@ -1221,6 +1220,7 @@ vendor/lib/libcodec2_soft_common.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib/libcodec2_vndk.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
 vendor/lib/libcodecsolutionhelper_vendor.so
@@ -1237,6 +1237,7 @@ vendor/lib/libstagefrighthw.so
 vendor/lib/vintf-codecsolution-V2-ndk_platform.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libcodec2_hidl@1.0.so
 vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
@@ -1260,6 +1261,7 @@ vendor/lib64/libcodec2_soft_eac3dec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib64/libcodec2_soft_mtk_mp3dec.so
 vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libcodecsolutionhelper_vendor.so
