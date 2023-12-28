@@ -1182,6 +1182,7 @@ vendor/etc/init/android.hardware.keymaster@4.0-service.rc
 vendor/lib64/libkeymaster4.so
 vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libkmsetkey.so
 vendor/lib64/libskeymaster4device.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
@@ -2005,7 +2006,6 @@ vendor/lib64/libicd_decoder.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libimgproc_sw.unifunc.so
 vendor/lib64/libimgsensorca.so
-vendor/lib64/libkmsetkey.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnl.so
