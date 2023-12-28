@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
