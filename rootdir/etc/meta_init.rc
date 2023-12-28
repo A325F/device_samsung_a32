@@ -4,7 +4,6 @@
 # This is a common source of Android security bugs.
 #
 # I am S vendor meta_init.rc
-import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/trustonic.rc
 import ${ro.vendor.rc}meta_init.connectivity.rc
 import /vendor/etc/init/hw/meta_init.project.rc
@@ -16,8 +15,6 @@ import /vendor/etc/init/android.hardware.boot@1.2-service.rc
 #import ${ro.vendor.rc}multi_init.rc
 #phase out multi_init.rc, move related vendor rc to here.
 #start
-import /vendor/etc/init/aee_aedv.rc
-import /vendor/etc/init/aee_aedv64.rc
 import /vendor/etc/init/storageproxyd.rc
 import /vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 import /vendor/etc/init/android.hardware.keymaster@3.0-service.trustonic.rc

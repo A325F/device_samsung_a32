@@ -131,7 +131,6 @@ ro.system.build.version.sehi=3303
 ro.system.qb.id=73170825
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.customer_logpath=/data
-ro.vendor.have_aee_feature=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_power_off_alarm_test=1

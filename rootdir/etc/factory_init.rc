@@ -10,8 +10,6 @@ import /vendor/etc/init/trustonic.rc
 import ${ro.vendor.rc}init.nvdata.rc
 import /vendor/etc/init/microtrust.rc
 import /vendor/etc/init/trustkernel.rc
-import /vendor/etc/init/hw/init.aee.rc
-import /system_ext/etc/init/hw/init.aee.rc
 import /system/etc/init/update_verifier.rc
 import /vendor/etc/init/android.hardware.boot@1.2-service.rc
 import /vendor/etc/init/android.hardware.boot@1.2-service-lazy.rc

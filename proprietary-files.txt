@@ -1,20 +1,12 @@
 # Unpinned blobs from a32xx-user 13 TP1A.220624.014 A325FXXS6DWK1 release-keys
 
 # AEE
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
-vendor/bin/aeev
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/lib/libaedv.so
+vendor/lib/libladder.so
+vendor/lib/libudf.so
 vendor/lib64/libaedv.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
+vendor/lib64/libladder.so
+vendor/lib64/libudf.so
 
 # APDB
 vendor/etc/apdb/APDB_MT6768_S01__W2310
@@ -53,7 +45,6 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libfloatingfeature.so
-vendor/lib/libladder.so
 vendor/lib/librecordalive.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
@@ -83,7 +74,6 @@ vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libfloatingfeature.so
-vendor/lib64/libladder.so
 vendor/lib64/librecordalive.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
@@ -891,6 +881,7 @@ vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 # DRK
 vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
 vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
+vendor/lib64/libdk_vnd_service_core.so
 vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 
 # DRM
@@ -1944,7 +1935,6 @@ vendor/lib/libsysenv.so
 vendor/lib/libtad.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libthha.so
-vendor/lib/libudf.so
 vendor/lib/libuuid.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
@@ -2000,7 +1990,6 @@ vendor/lib64/libcppbor_external.so
 vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdecrypt.so
-vendor/lib64/libdk_vnd_service_core.so
 vendor/lib64/libdre.so
 vendor/lib64/libdynamiclog.so
 vendor/lib64/libfft_vendor.so
@@ -2082,7 +2071,6 @@ vendor/lib64/libtflite_mtk.so
 vendor/lib64/libthha.so
 vendor/lib64/libtvm_runtime.so
 vendor/lib64/libtvm_wrapper.so
-vendor/lib64/libudf.so
 vendor/lib64/libuuid.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
