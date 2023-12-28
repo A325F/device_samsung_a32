@@ -42,11 +42,27 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.common@1.2.vendor \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@4.0.vendor \
+    gralloc.default \
+    libdrm.vendor \
+    libgrallocusage.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
+
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    memtrack.default
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *

@@ -545,7 +545,6 @@ vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libged.so
 vendor/lib/libgralloc_extra.so
-vendor/lib/libgrallocusage.so
 vendor/lib/libgz_uree.so
 vendor/lib/libhigh_dynamic_range_bokeh.so
 vendor/lib/libhwscaler_camera.mtk.so
@@ -683,7 +682,6 @@ vendor/lib64/libfeature_rss.so
 vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libged.so
 vendor/lib64/libgralloc_extra.so
-vendor/lib64/libgrallocusage.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libheichal.so
 vendor/lib64/libhigh_dynamic_range_bokeh.so
@@ -828,12 +826,8 @@ vendor/lib64/libcamera2ndk_vendor.so
 # Display
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -842,9 +836,8 @@ vendor/lib/egl/libMEOW_data.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/memtrack.default.so
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/hw/vulkan.mt6768.so
 vendor/lib/libDefaultFpsActor.so
@@ -865,10 +858,9 @@ vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib64/hw/gralloc.default.so
+vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6768.so
-vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/hw/vulkan.mt6768.so
 vendor/lib64/libDefaultFpsActor.so
@@ -877,7 +869,6 @@ vendor/lib64/libNoFpsActor.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
-vendor/lib64/libhwc2onfbadapter.so
 vendor/lib64/libmml.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
