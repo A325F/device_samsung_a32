@@ -1660,8 +1660,6 @@ vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/lib/meta_wifi_data.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
