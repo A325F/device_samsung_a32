@@ -1628,6 +1628,7 @@ vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/lib64/libdsms_vendor.so
 vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/libvkservice.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 
@@ -1635,12 +1636,8 @@ vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/bin/hw/vendor.samsung.hardware.vibrator-service
 vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
-vendor/lib/hw/vibrator.default.so
 vendor/lib/hw/vibrator.mt6768.so
-vendor/lib/libvibrator.so
-vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.mt6768.so
-vendor/lib64/libvibrator.so
 vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk_platform.so
 
 # Wi-Fi
@@ -2065,7 +2062,6 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvdis.uniplugin@1.0.so
 vendor/lib64/libvdis_core.so
-vendor/lib64/libvkservice.so
 vendor/lib64/libvpu5.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/libz_stable.so
