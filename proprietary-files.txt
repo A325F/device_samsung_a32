@@ -1495,9 +1495,6 @@ vendor/lib64/libsnaplite_native.so
 vendor/lib64/libsnaplite_wrapper.so
 vendor/lib64/vendor.samsung.hardware.snap-V1-ndk_platform.so
 
-# Soundtrigger
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
-
 # Sysinput
 vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service
 vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc

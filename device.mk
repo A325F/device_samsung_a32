@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.primary.default \
     audio.r_submix.default \
